@@ -1,0 +1,259 @@
+---
+// Header component with navigation
+import { Image } from 'astro:assets';
+import panelUpgradelogo from '../assets/images/panelupgrade-logo.png';
+
+// Get the current URL path to determine active menu item
+const { pathname } = Astro.url;
+
+// Header component with navigation
+
+// Function to determine if a link is active
+const isActive = (href) => {
+  return pathname === href;
+};
+
+// Function to get the class for a nav link
+const getLinkClass = (href) => {
+  const baseClass = "text-base font-manrope transition-colors duration-300";
+  return isActive(href) 
+    ? `${baseClass} border-b-3 border-accent text-black font-bold` 
+    : `${baseClass} text-dark hover:text-accent`;
+};
+---
+
+<header id="site-header" class="bg-[#fdfdfd] relative z-50 transition-all duration-300">
+  <div class="menu px-4 sm:px-6 xl:px-16">
+    <div class="flex items-center h-24">
+      <!-- Logo/Brand -->
+      <div class="flex-shrink-0 w-1/4">
+        <a href="/" class="flex items-center font-bold font-manrope">
+          <Image
+            src={panelUpgradelogo}
+            alt="Vegas Panel Upgrade Logo"
+            class="h-14 md:h-16 w-auto"
+            width={300}
+            height={250}
+          />
+          <!-- Vegaspanel<span class="text-accent">upgrade</span> -->
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav space-x-2.5 xl:space-x-6 flex-grow justify-center">
+        <!-- Home Security Systems -->
+        <a
+          href="/"
+          class={getLinkClass("/")}
+        >
+          Home
+        </a>
+        
+        <!-- Commercial CCTV -->
+        <!-- <a
+          href="/commercial-cctv-surveillance/"
+          class={getLinkClass("/commercial-cctv-surveillance/")}
+        >
+          Commercial CCTV
+        </a> -->
+        
+        <!-- Access Control Systems -->
+        <!-- <a
+          href="/access-control-systems/"
+          class={getLinkClass("/access-control-systems/")}
+        >
+          Access Control
+        </a> -->
+
+        <!-- About -->
+        <a
+          href="/about/"
+          class={getLinkClass("/about/")}
+        >
+          About
+        </a>
+
+      </nav>
+      
+      <!-- Contact button - Now outside of nav -->
+      <div class="desktop-contact-btn w-1/4 justify-end">
+        <a
+          href="/contact-us/"
+          class="flex items-center text-black text-base px-4 py-2 border hover:text-accent rounded-full font-poppins transition-colors duration-300"
+        >
+          Get Started
+          <span
+          class="bg-accent p-1 rounded-full flex items-center justify-between w-6 h-6 ml-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 rotate-45"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="mobile-menu-btn">
+        <button
+          type="button"
+          class="mobile-menu-button text-dark hover:text-accent focus:outline-none focus:text-accent transition-colors duration-300 p-2"
+          aria-label="Toggle menu"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
+        <a
+          href="/"
+          class="block px-3 py-2 text-base font-semibold text-dark hover:text-accent hover:bg-gray-50 transition-colors duration-300"
+        >
+          Home
+        </a>
+
+        <a
+          href="/about/"
+          class="block px-3 py-2 text-base font-semibold text-dark hover:text-accent hover:bg-gray-50 transition-colors duration-300"
+        >
+          About
+        </a>
+
+        <a
+          href="/contact-us/"
+          class="block px-3 py-2 text-base font-semibold text-dark hover:text-accent hover:bg-gray-50 transition-colors duration-300"
+        >
+          Get Started
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<style>
+  @media (min-width: 1600px) {
+    .menu {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /* Custom breakpoint for mobile menu */
+  @media (min-width: 1024px) {
+    .desktop-nav {
+      display: flex;
+    }
+    .desktop-contact-btn {
+      display: flex;
+    }
+    .mobile-menu-btn {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .desktop-nav {
+      display: none;
+    }
+    .desktop-contact-btn {
+      display: none;
+    }
+    .mobile-menu-btn {
+      display: block;
+      margin-left: auto;
+    }
+  }
+</style>
+<script>
+  // Mobile menu toggle functionality and header scroll behavior
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuButton = document.querySelector(".mobile-menu-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const header = document.getElementById("site-header");
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    // Mobile menu toggle
+    mobileMenuButton.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener("click", function (event) {
+      if (
+        !mobileMenu.contains(event.target) &&
+        !mobileMenuButton.contains(event.target) &&
+        !mobileMenu.classList.contains("hidden")
+      ) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+
+    // Close mobile menu when window is resized to desktop size
+    window.addEventListener("resize", function () {
+      if (window.innerWidth >= 1024 && !mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+
+    // Header scroll behavior
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY <= 0) {
+        // At the top of the page - use relative positioning
+        header.style.position = 'relative';
+        header.style.top = 'auto';
+        header.classList.remove('fixed', 'top-0', 'left-0', 'right-0');
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling up - show fixed header
+        header.style.position = 'fixed';
+        header.style.top = '0';
+        header.classList.add('fixed', 'top-0', 'left-0', 'right-0');
+        header.classList.remove("translate-y-[-100%]");
+      } else if (currentScrollY > lastScrollY && currentScrollY > header.offsetHeight) {
+        // Scrolling down - hide header but keep it fixed
+        header.style.position = 'fixed';
+        header.style.top = '0';
+        header.classList.add('fixed', 'top-0', 'left-0', 'right-0');
+        header.classList.add("translate-y-[-100%]");
+      }
+      
+      lastScrollY = currentScrollY;
+      ticking = false;
+    }
+
+    // Throttle scroll events
+    window.addEventListener("scroll", function() {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  });
+</script>

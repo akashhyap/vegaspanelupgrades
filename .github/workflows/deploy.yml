@@ -1,0 +1,45 @@
+name: Deploy to Cloudways (SFTP)
+
+on:
+  push:
+    branches: [ main ]   # change if your default branch differs
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build Astro
+        run: npm run build
+
+      # --- Pure SFTP upload (no SSH shell) ---
+      - name: Upload dist/ to Cloudways via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+        with:
+          server: ${{ secrets.CLOUDWAYS_HOST }}     # Cloudways public IP
+          username: ${{ secrets.CLOUDWAYS_USER }}   # Application username
+          password: ${{ secrets.CLOUDWAYS_PASS }}   # Application password
+          port: 22
+          sftp_only: true                           # IMPORTANT: no shell
+          local_path: './dist/*'                    # Astro build output
+          remote_path: 'public_html'                # relative to app’s SFTP root
+          sftpArgs: '-o ConnectTimeout=15 -o StrictHostKeyChecking=no'
+          delete_remote_files: false                # set true for clean deploys
+          # Optional excludes via rsync (v1.2.5+):
+          # rsyncArgs: '--exclude=.well-known --exclude=*.map'

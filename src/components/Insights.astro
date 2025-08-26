@@ -1,0 +1,162 @@
+---
+// Insights component with valuable electrical information
+import { Image } from "astro:assets";
+// Using existing images from the project
+import panelImage from "../assets/images/panel.jpg";
+import panel2Image from "../assets/images/panel2.jpg";
+import splashImage from "../assets/images/panelupgrade-splash.jpg";
+---
+
+<section class="bg-gray-100">
+  <div class="py-16 xl:py-24 px-4 sm:px-6 xl:px-16">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-3">
+        Electrical Panel Insights
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Understanding modern electrical systems and how they can benefit your
+        home or business
+      </p>
+    </div>
+
+    <!-- Insights Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Insight 1 -->
+      <div class="bg-white p-6 rounded-xl">
+        <div class="flex items-center gap-2 mb-4">
+          <span
+            class="inline-block w-1 h-1 rounded-full bg-accent self-center"
+          ></span>
+          <h3 class="text-xl font-bold">Safety First</h3>
+        </div>
+        <div class="mb-4 overflow-hidden rounded-lg">
+          <Image
+            src={panelImage}
+            alt="Electrical Safety Features"
+            width={400}
+            height={250}
+            class="w-full h-48 object-cover transition-transform hover:scale-105 duration-300"
+          />
+        </div>
+        <p class="text-gray-600">
+        <span class="text-gray-900">Modern electrical panels include advanced circuit breakers and safety</span>
+          features that prevent electrical hazards and reduce fire risks.
+        </p>
+        <a
+          href="/about-us/"
+          class="inline-flex items-center text-secondary font-manrope font-bold mt-3"
+          >Learn More
+          <span
+            class="bg-accent p-1 rounded-full flex items-center justify-between w-6 h-6 ml-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Insight 2 -->
+      <div class="bg-white p-6 rounded-xl">
+        <div class="flex items-center gap-2 mb-4">
+          <span
+            class="inline-block w-1 h-1 rounded-full bg-accent self-center"
+          ></span>
+          <h3 class="text-xl font-bold">Energy Efficiency</h3>
+        </div>
+        <div class="mb-4 overflow-hidden rounded-lg">
+          <Image
+            src={panel2Image}
+            alt="Energy Efficient Electrical Panel"
+            width={400}
+            height={250}
+            class="w-full h-48 object-cover transition-transform hover:scale-105 duration-300"
+          />
+        </div>
+        <p class="text-gray-600">
+          <span class="text-gray-900">Upgrading your electrical panel can improve energy distribution,</span>
+          reducing power consumption and lowering utility bills.
+        </p>
+        <a
+          href="/about-us/"
+          class="inline-flex items-center text-secondary font-manrope font-bold mt-3"
+          >Learn More
+          <span
+            class="bg-accent p-1 rounded-full flex items-center justify-between w-6 h-6 ml-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Insight 3 -->
+      <div class="bg-white p-6 rounded-xl">
+        <div class="flex items-center gap-2 mb-4">
+          <span
+            class="inline-block w-1 h-1 rounded-full bg-accent self-center"
+          ></span>
+          <h3 class="text-xl font-bold">Future Proofing</h3>
+        </div>
+        <div class="mb-4 overflow-hidden rounded-lg">
+          <Image
+            src={splashImage}
+            alt="Modern Electrical Panel for Future Needs"
+            width={400}
+            height={250}
+            class="w-full h-48 object-cover transition-transform hover:scale-105 duration-300"
+          />
+        </div>
+        <p class="text-gray-600">
+          <span class="text-gray-900">Modern panels support higher amperage for today's technology demands</span>
+          and accommodate future home additions or renovations.
+        </p>
+        <a
+          href="/about-us/"
+          class="inline-flex items-center text-secondary font-manrope font-bold mt-3"
+          >Learn More
+          <span
+            class="bg-accent p-1 rounded-full flex items-center justify-between w-6 h-6 ml-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Add any specific styles for insights section here */
+</style>

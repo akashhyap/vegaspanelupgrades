@@ -1,0 +1,114 @@
+---
+// Expertise component with two-column layout
+import { Image } from "astro:assets";
+import electricianImage from "../assets/images/panel.jpg"; // Placeholder - replace with actual electrician image
+---
+
+<section class="py-10 sm:py-16 xl:py-24 px-4 sm:px-6 xl:px-16">
+  <div class="container mx-auto">
+    <div>
+      <span class="text-accent font-bold text-base font-manrope"
+        >Professional Expertise</span
+      >
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      <!-- Left Column: Bold Heading -->
+      <div>
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-medium leading-[1.2] sm:leading-[1.1] mt-2"
+        >
+          <span class="text-gray-400 block sm:inline">Crafting Reliable </span>
+          <span class="font-bold text-black block sm:inline"
+            >Electrical Solutions &</span
+          >
+          <span class="text-gray-400 block sm:inline">
+            Exceptional Services</span
+          >
+        </h2>
+        <!-- Expertise Highlights -->
+        <div class="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8">
+          <div
+            class="inline-flex items-center gap-2 border border-gray-300 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full"
+          >
+            <span
+              class="inline-block w-1 h-1 rounded-full bg-accent self-center"
+            ></span>
+            <h4 class="font-medium text-sm sm:text-base">
+              Licensed Professionals
+            </h4>
+          </div>
+
+          <div
+            class="inline-flex items-center gap-2 border border-gray-300 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full"
+          >
+            <span
+              class="inline-block w-1 h-1 rounded-full bg-accent self-center"
+            ></span>
+            <h4 class="font-medium text-sm sm:text-base">Code Compliant</h4>
+          </div>
+
+          <div
+            class="inline-flex items-center gap-2 border border-gray-300 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full"
+          >
+            <span
+              class="inline-block w-1 h-1 rounded-full bg-accent self-center"
+            ></span>
+            <h4 class="font-medium text-sm sm:text-base">Advanced Training</h4>
+          </div>
+
+          <div
+            class="inline-flex items-center gap-2 border border-gray-300 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full"
+          >
+            <span
+              class="inline-block w-1 h-1 rounded-full bg-accent self-center"
+            ></span>
+            <h4 class="font-medium text-sm sm:text-base">Experience</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Expertise Description -->
+      <div>
+        <p class="text-gray-800 mb-4 sm:mb-6 text-xl sm:text-2xl">
+          With a keen eye for electrical systems and a deep understanding of
+          safety codes, we design panel upgrades that not only meet current
+          standards but also anticipate your future needs.
+        </p>
+        <p class="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
+          Whether it's upgrading a residential panel for increased capacity or
+          refining a commercial electrical system for optimal performance, we
+          blend technical expertise, safety protocols, and functionality to
+          bring peace of mind to Las Vegas homeowners and businesses.
+        </p>
+
+        <div>
+          <a
+            href="/about-us/"
+            class="inline-flex items-center text-secondary font-manrope font-bold"
+            >Learn More
+            <span
+              class="bg-accent p-1 rounded-full flex items-center justify-between w-6 h-6 ml-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 rotate-45"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Add any specific styles for expertise section here */
+</style>

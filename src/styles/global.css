@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+:root {
+  --color-primary: #fd4a22;
+  --color-secondary: #34495e;
+  --color-accent: #f1b725;
+  --color-dark: #201e1e;
+  --color-light: #bdbdbd;
+}
+
+/* TailwindCSS theme colors */
+@theme {
+  --color-primary: #fd4a22;
+  --color-secondary: #34495e;
+  --color-accent: #f1b725;
+  --color-dark: #201e1e;
+  --color-light: #bdbdbd;
+}
+
+html {
+   overflow-x: hidden;
+}
+
+body {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@utility font-manrope {
+  font-family: "Manrope", sans-serif;
+}   
+
+@utility font-poppins {
+  font-family: "Poppins", sans-serif;
+}   
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Container width adjustments */
+@media (min-width: 1536px) and (max-width: 1640px) {
+  .container {
+    max-width: 85rem !important;
+  }
+}

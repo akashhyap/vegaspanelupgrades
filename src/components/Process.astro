@@ -1,0 +1,98 @@
+---
+// Insights component with 3-column layout
+import { Image } from "astro:assets";
+import panelImage from "../assets/images/panel2.jpg";
+---
+
+<section
+  class="container-m mx-auto py-16 lg:py-24 xl:py-28 px-4 sm:px-6"
+>
+  <div class="container mx-auto">
+    <!-- 3-Column Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-center">
+      <!-- Left Column: Text and Description -->
+      <div class="lg:col-span-5 space-y-6">
+        <span class="text-accent font-bold text-base font-manrope">Our Process</span>
+        <h2 class="text-4xl md:text-5xl font-medium leading-[1.1]">
+          <span class="text-gray-400">Trusted </span>
+          <span class="font-bold text-black"
+            >Electricians Committed </span
+          >
+          <span class="text-gray-400"> For Safety</span>
+        </h2>
+        <p class="text-gray-700 mb-4">
+          Our professional team ensures every electrical project is handled with
+          expertise and precision.
+        </p>
+        <p class="text-gray-700 mb-4">
+          We follow a structured approach to deliver exceptional electrical services.
+        </p>
+      </div>
+
+      <!-- Center Column: Image (Smallest) -->
+      <div class="lg:col-span-3 flex justify-center bg-red h-full">
+        <div class="relative w-full max-w-xs">
+          <Image
+            src={panelImage}
+            alt="Electrical panel installation"
+            class="rounded-2xl object-cover w-full h-full"
+            width={500}
+            height={900}
+          />
+        </div>
+      </div>
+
+      <!-- Right Column: Sign Up & Setup -->
+      <div class="lg:col-span-4">
+        <div class="space-y-2.5">
+          <div class="flex items-center mb-1">
+            <div
+              class="bg-black rounded-full w-6 h-6 flex items-center justify-center mr-3"
+            >
+              <span class="font-bold text-accent text-base">1</span>
+            </div>
+            <h3 class="font-medium">Sign Up & Set Up</h3>
+          </div>
+          <p class="text-gray-600 ml-11 mb-3">
+            We provide a simple assessment and proposal process tailored to your
+            specific electrical needs
+          </p>
+          <div class="flex items-center mb-1">
+            <div
+              class="bg-black rounded-full w-6 h-6 flex items-center justify-center mr-3"
+            >
+              <span class="font-bold text-accent text-base">2</span>
+            </div>
+            <h3 class="font-medium">Connect & Automate</h3>
+          </div>
+          <p class="text-gray-600 ml-11 mb-3">
+            Our skilled technicians install and upgrade your electrical systems
+            with precision and care
+          </p>
+          <div class="flex items-center mb-1">
+            <div
+              class="bg-black rounded-full w-6 h-6 flex items-center justify-center mr-3"
+            >
+              <span class="font-bold text-accent text-base">3</span>
+            </div>
+            <h3 class="font-medium">Optimize & Grow</h3>
+          </div>
+          <p class="text-gray-600 ml-11">
+            Enjoy a safe, reliable electrical system with ongoing support and
+            maintenance as needed
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (min-width: 1600px) {
+    .container-m {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>
