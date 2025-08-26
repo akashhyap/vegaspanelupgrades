@@ -2,7 +2,7 @@ name: Deploy to Cloudways (SFTP)
 
 on:
   push:
-    branches: [ main ]   # change if your default branch differs
+    branches: [ main ]
 
 concurrency:
   group: deploy-${{ github.ref }}
@@ -20,26 +20,37 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: 'npm'            # built-in cache for npm
 
-      - name: Install deps
-        run: npm ci
+      # Extra npm cache to reduce registry hits further
+      - name: Cache npm downloads
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
+      # Retries + longer timeouts to ride out 429s
+      - name: Install deps (with retries)
+        run: |
+          npm ci \
+            --fetch-retries=5 \
+            --fetch-retry-mintimeout=20000 \
+            --fetch-retry-maxtimeout=120000
 
       - name: Build Astro
         run: npm run build
 
-      # --- Pure SFTP upload (no SSH shell) ---
       - name: Upload dist/ to Cloudways via SFTP
         uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          server: ${{ secrets.CLOUDWAYS_HOST }}     # Cloudways public IP
-          username: ${{ secrets.CLOUDWAYS_USER }}   # Application username
-          password: ${{ secrets.CLOUDWAYS_PASS }}   # Application password
+          server: ${{ secrets.CLOUDWAYS_HOST }}
+          username: ${{ secrets.CLOUDWAYS_USER }}
+          password: ${{ secrets.CLOUDWAYS_PASS }}
           port: 22
-          sftp_only: true                           # IMPORTANT: no shell
-          local_path: './dist/*'                    # Astro build output
-          remote_path: 'public_html'                # relative to app’s SFTP root
+          sftp_only: true
+          local_path: './dist/*'
+          remote_path: 'public_html'
           sftpArgs: '-o ConnectTimeout=15 -o StrictHostKeyChecking=no'
-          delete_remote_files: false                # set true for clean deploys
-          # Optional excludes via rsync (v1.2.5+):
-          # rsyncArgs: '--exclude=.well-known --exclude=*.map'
+          delete_remote_files: false
