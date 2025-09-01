@@ -1,0 +1,284 @@
+---
+// src/pages/main-panel-vs-subpanel.astro
+import Layout from "../layouts/Layout.astro";
+
+const pageTitle =
+  "Main Panel vs. Subpanel: What's the Difference in Las Vegas Homes?";
+const pageDescription =
+  "Learn the difference between a main electrical panel and a subpanel, and discover when you might need a subpanel for a garage, workshop, or home addition.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section class="page-header-comparison text-white py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold">
+          Main Panel vs. Subpanel: What's the Difference?
+        </h1>
+        <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+          Understanding the roles of these key components helps you plan for
+          home additions, workshops, and other high-power needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div
+            class="prose prose-lg max-w-none mb-12 text-center text-gray-700"
+          >
+            <p>
+              Think of your home's electrical system like a tree. The main
+              electrical panel is the trunk, and a subpanel is a major branch.
+              Both are essential for distributing power, but they serve
+              different primary functions.
+            </p>
+          </div>
+
+          <!-- Comparison Grid -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Main Panel Card -->
+            <div
+              class="bg-white p-8 rounded-lg shadow-xl comparison-card-main border-t-8"
+            >
+              <h2 class="text-3xl font-bold comparison-title">
+                Main Electrical Panel
+              </h2>
+              <p class="text-gray-600 mt-4 text-lg">
+                The main panel (or service panel) is the heart of your home's
+                electrical system. It's where the main power line from NV Energy
+                enters your house.
+              </p>
+              <ul class="mt-6 space-y-4">
+                <li class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-gray-800 mr-3 flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <div>
+                    <strong class="text-gray-900">Function:</strong> Receives all
+                    power from the utility and contains the main breaker to shut
+                    off power to the entire house.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-gray-800 mr-3 flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    ></path>
+                  </svg>
+                  <div>
+                    <strong class="text-gray-900">Location:</strong> Typically found
+                    in a garage, basement, or utility closet where the service line
+                    enters the home.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-gray-800 mr-3 flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <div>
+                    <strong class="text-gray-900">Key Feature:</strong> Distributes
+                    power to all circuits throughout the home. Its total amperage
+                    (e.g., 100A, 200A) limits your home's total power usage.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Subpanel Card -->
+            <div
+              class="bg-white p-8 rounded-lg shadow-xl comparison-card-sub border-t-8"
+            >
+              <h2 class="text-3xl font-bold comparison-title">Subpanel</h2>
+              <p class="text-gray-600 mt-4 text-lg">
+                A subpanel is a smaller, secondary electrical panel that gets
+                its power from the main panel. It does not have a main breaker
+                to shut off the whole house.
+              </p>
+              <ul class="mt-6 space-y-4">
+                <li class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-gray-800 mr-3 flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <div>
+                    <strong class="text-gray-900">Function:</strong> Acts as a local
+                    distribution point, providing circuits for a specific area or
+                    purpose (like a workshop or kitchen).
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-gray-800 mr-3 flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    ></path>
+                  </svg>
+                  <div>
+                    <strong class="text-gray-900">Location:</strong> Installed closer
+                    to where the power is needed, such as in a detached garage, a
+                    large kitchen, or a home addition.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="w-6 h-6 text-gray-800 mr-3 flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <div>
+                    <strong class="text-gray-900">Key Feature:</strong> Frees up
+                    space in the main panel and makes it more convenient to add circuits
+                    in a specific area without running long wires back to the main
+                    panel.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- When do you need a subpanel? -->
+          <div class="my-16 bg-gray-50 p-8 rounded-lg">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-6">
+              When Would You Need a Subpanel?
+            </h2>
+            <div class="max-w-2xl mx-auto space-y-4">
+              <p class="text-lg text-gray-700">
+                A subpanel is an excellent solution in several common scenarios:
+              </p>
+              <ul class="list-disc pl-5 space-y-2 text-gray-700 text-lg">
+                <li>
+                  You're building a <strong>home addition</strong> or finishing a
+                  basement.
+                </li>
+                <li>
+                  You have a <strong>detached garage or workshop</strong> that needs
+                  power for tools and lighting.
+                </li>
+                <li>
+                  You are doing a major <strong>kitchen remodel</strong> with many
+                  new, dedicated appliance circuits.
+                </li>
+                <li>
+                  Your main panel is full, but you still have enough overall
+                  amperage capacity to add more circuits.
+                </li>
+              </ul>
+              <p class="text-lg text-gray-700 pt-4">
+                <strong>Important:</strong> Installing a subpanel does not increase
+                the total amount of power available to your home. If your system
+                is already overloaded, you will need a full
+                <a href="/" class="text-accent font-semibold hover:underline"
+                  >main panel upgrade</a
+                >, not just a subpanel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final CTA -->
+      <div
+        class="text-center bg-gray-800 text-white py-16 xl:py-24 rounded-lg shadow-xl"
+      >
+        <h2 class="text-3xl font-extrabold">
+          Planning a Project? Let's Assess Your Needs.
+        </h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          Whether you need a subpanel for a new workshop or a full main panel
+          upgrade for an EV charger, we can design the right solution for you.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/company/company/contact-us/"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Get a Free Electrical Assessment
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  }
+
+  /* Template-specific */
+  .page-header-comparison {
+    background-color: #374151;
+  } /* gray-700 */
+  .comparison-card-main {
+    border-color: #4b5563;
+  } /* gray-600 */
+  .comparison-card-sub {
+    border-color: #9ca3af;
+  } /* gray-400 */
+  .comparison-title {
+    color: #1f2937;
+  } /* gray-800 */
+</style>

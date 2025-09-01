@@ -1,0 +1,147 @@
+---
+// src/pages/hotel-resort-electrical-panel-services-las-vegas.astro
+import { getImage } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import hospitalityHero from "../../assets/images/hotel-lobby.jpg";
+
+const pageTitle = "Hotel & Resort Electrical Panel Services | Las Vegas, NV";
+const pageDescription =
+  "Expert electrical panel upgrades and services for the Las Vegas hospitality industry. We specialize in zero-downtime solutions for hotels, resorts, and casinos.";
+
+const hero = await getImage({ src: hospitalityHero });
+const heroBg = `linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.45)), url(${hero.src})`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section class="page-header-hospitality text-white" style={{ backgroundImage: heroBg }}>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            Hotel &amp; Resort Electrical Panel Services
+          </h1>
+          <p class="text-lg md:text-xl text-gray-300">
+            Ensuring the safety, comfort, and uninterrupted experience of your guests with reliable, code-compliant electrical systems. We are the trusted electrical contractor for the Las Vegas hospitality industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Powering the Ultimate Guest Experience</h2>
+            <p>
+              In the hospitality industry, the guest experience is everything. A power outage, even a brief one, can lead to negative reviews, safety concerns, and lost revenue. We provide specialized
+              <a href="/mission-critical-electrical-services-las-vegas" class="text-accent font-semibold hover:underline">mission-critical electrical services</a>
+              tailored to the unique demands of hotels and resorts, ensuring your facility's power system is a source of reliability, not a point of failure.
+            </p>
+          </div>
+
+          <!-- Key Focus Areas -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Guest Rooms & Suites -->
+            <div class="hospitality-focus-card p-8 rounded-lg shadow-sm">
+              <div class="flex items-center mb-4">
+                <div class="hospitality-icon mr-4">
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold">Guest Rooms &amp; Suites</h3>
+              </div>
+              <p class="text-gray-600">
+                We ensure each room has safe, adequate power for modern guest needs, including dedicated circuits for mini-fridges, robust power for entertainment systems, and ample outlets for charging personal devices.
+              </p>
+            </div>
+
+            <!-- Commercial Kitchens -->
+            <div class="hospitality-focus-card p-8 rounded-lg shadow-sm">
+              <div class="flex items-center mb-4">
+                <div class="hospitality-icon mr-4">
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.014 14 3 3 0 009.879 16.121z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold">Commercial Kitchens</h3>
+              </div>
+              <p class="text-gray-600">
+                Your food and beverage operations depend on reliable power. We install and upgrade
+                <a href="/three-phase-panel-upgrades-las-vegas" class="text-accent font-semibold hover:underline">three-phase panels</a>
+                to handle the immense load of commercial ovens, walk-in coolers, and dishwashers.
+              </p>
+            </div>
+
+            <!-- Pools, Spas & Fitness -->
+            <div class="hospitality-focus-card p-8 rounded-lg shadow-sm">
+              <div class="flex items-center mb-4">
+                <div class="hospitality-icon mr-4">
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.293 2.293a1 1 0 010 1.414L11 15H9v-2l6.293-6.293a1 1 0 011.414 0L19 9z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold">Pools, Spas &amp; Fitness Centers</h3>
+              </div>
+              <p class="text-gray-600">
+                We ensure all amenity areas have safe, GFCI-protected circuits for pumps, heaters, lighting, and fitness equipment, meeting all specific safety codes for wet environments.
+              </p>
+            </div>
+
+            <!-- Common Areas -->
+            <div class="hospitality-focus-card p-8 rounded-lg shadow-sm">
+              <div class="flex items-center mb-4">
+                <div class="hospitality-icon mr-4">
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold">Lobbies, Ballrooms &amp; Event Spaces</h3>
+              </div>
+              <p class="text-gray-600">
+                From architectural lighting in the lobby to complex A/V systems in ballrooms, we design and install electrical systems that are both functional and flexible for any event.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Final CTA -->
+        <div id="contact-form-hospitality" class="py-16 xl:py-24 text-center bg-gray-800 text-white">
+            <h2 class="text-3xl font-extrabold">Protect Your Guests, Protect Your Reputation</h2>
+            <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+              Partner with an electrical contractor that understands the unique demands of the hospitality industry. Contact us for a confidential consultation and facility assessment.
+            </p>
+            <div class="mt-8">
+              <a
+                href="/commercial-electrical-panel-upgrades-las-vegas#contact-form-commercial"
+                class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+              >
+                Schedule a Facility Consultation
+              </a>
+            </div>
+          </div>
+    </section>
+  </main>
+
+ 
+</Layout>
+<style>
+    /* Accent utilities (scoped) */
+    .bg-accent { background-color: #f1b725; } /* amber-400 */
+    .text-accent { color: #f1b725; }
+    .border-accent { border-color: #f1b725; }
+    .hover\:bg-accent-dark:hover { background-color: #F59E0B; } /* amber-500 */
+    .ring-accent { --tw-ring-color: #f1b725; }
+
+    /* Hospitality template */
+    .page-header-hospitality {
+      background-color: #0F172A; /* slate-900 fallback */
+      background-size: cover;
+      background-position: center;
+    }
+    .hospitality-focus-card { background-color: #F8FAFC; } /* slate-50 */
+    .hospitality-icon { color: #0F172A; } /* slate-900 */
+  </style>

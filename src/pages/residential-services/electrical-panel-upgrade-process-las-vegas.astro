@@ -1,0 +1,245 @@
+---
+// src/pages/panel-upgrade-process.astro (example path)
+import Layout from "../../layouts/Layout.astro";
+
+const pageTitle =
+  "The Panel Upgrade Process in Las Vegas | A Step-by-Step Guide";
+const pageDescription =
+  "Our step-by-step guide to the electrical panel upgrade process in Las Vegas, from initial consultation and permitting with Clark County to final inspection.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main>
+    <!-- Page Header -->
+    <div class="page-header-process text-white py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold">
+          Our Panel Upgrade Process: A Step-by-Step Guide
+        </h1>
+        <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+          We manage every detail from start to finish to ensure a safe,
+          compliant, and stress-free experience for you.
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12 text-center">
+            <p>
+              An electrical panel upgrade is a complex project that requires
+              careful coordination between you, your electrical contractor, the
+              local utility company, and the city or county building department.
+              Our professional process is designed to handle all of these moving
+              parts seamlessly.
+            </p>
+          </div>
+
+          <!-- Process Timeline -->
+          <div class="relative">
+            <!-- Vertical line for md+ -->
+            <div
+              class="hidden md:block absolute inset-y-0 left-8 translate-x-8 z-0"
+            >
+              <div class="w-px h-full bg-gray-300"></div>
+            </div>
+
+            <div class="space-y-12 relative z-10">
+              <!-- Step 1 -->
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div
+                  class="col-span-1 md:col-span-2 flex justify-center mb-4 md:mb-0"
+                >
+                  <div
+                    class="process-step-number w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold z-10"
+                  >
+                    1
+                  </div>
+                </div>
+                <div
+                  class="col-span-1 md:col-span-10 bg-white p-6 rounded-lg shadow-md process-step-card border-t-4 border-accent"
+                >
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    Consultation &amp; Load Calculation
+                  </h3>
+                  <p class="text-gray-600 mt-3">
+                    The process begins when our licensed electrician visits your
+                    home to assess your current system. We'll discuss your
+                    current and future power needs (like an EV charger or new
+                    AC) and perform a detailed <strong
+                      >electrical load calculation</strong
+                    >
+                    to determine the correct panel size for your home.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div
+                  class="col-span-1 md:col-span-2 flex justify-center mb-4 md:mb-0"
+                >
+                  <div
+                    class="process-step-number w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold z-10"
+                  >
+                    2
+                  </div>
+                </div>
+                <div
+                  class="col-span-1 md:col-span-10 bg-white p-6 rounded-lg shadow-md process-step-card border-t-4 border-accent"
+                >
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    Transparent Proposal &amp; Scheduling
+                  </h3>
+                  <p class="text-gray-600 mt-3">
+                    You will receive a detailed, upfront proposal with no hidden
+                    fees. It will clearly outline the scope of work and the
+                    total investment. For more details on pricing, see our
+                    <a
+                      href="/cost-of-panel-upgrade-las-vegas"
+                      class="text-accent font-semibold hover:underline"
+                      >Las Vegas cost guide</a
+                    >. Once you approve, we'll schedule a convenient day for the
+                    installation.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div
+                  class="col-span-1 md:col-span-2 flex justify-center mb-4 md:mb-0"
+                >
+                  <div
+                    class="process-step-number w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold z-10"
+                  >
+                    3
+                  </div>
+                </div>
+                <div
+                  class="col-span-1 md:col-span-10 bg-white p-6 rounded-lg shadow-md process-step-card border-t-4 border-accent"
+                >
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    Permitting &amp; NV Energy Coordination
+                  </h3>
+                  <p class="text-gray-600 mt-3">
+                    We handle 100% of the paperwork. We file for the necessary
+                    electrical permit with <strong>Clark County</strong> or your
+                    local municipality and coordinate with <strong
+                      >NV Energy</strong
+                    > for the scheduled power disconnection and reconnection on the
+                    day of the job.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div
+                  class="col-span-1 md:col-span-2 flex justify-center mb-4 md:mb-0"
+                >
+                  <div
+                    class="process-step-number w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold z-10"
+                  >
+                    4
+                  </div>
+                </div>
+                <div
+                  class="col-span-1 md:col-span-10 bg-white p-6 rounded-lg shadow-md process-step-card border-t-4 border-accent"
+                >
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    The Day of Installation
+                  </h3>
+                  <p class="text-gray-600 mt-3">
+                    Our team arrives on time to perform the full panel
+                    replacement. Your power will be out for approximately
+                    <strong> 4 to 8 hours</strong>. We work cleanly and
+                    efficiently to remove the old panel, install the new one,
+                    connect all circuits, and ensure your home's grounding
+                    system is brought up to current code.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div
+                  class="col-span-1 md:col-span-2 flex justify-center mb-4 md:mb-0"
+                >
+                  <div
+                    class="process-step-number w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold z-10"
+                  >
+                    5
+                  </div>
+                </div>
+                <div
+                  class="col-span-1 md:col-span-10 bg-white p-6 rounded-lg shadow-md process-step-card border-t-4 border-accent"
+                >
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    Final Inspection &amp; Power Restoration
+                  </h3>
+                  <p class="text-gray-600 mt-3">
+                    We coordinate with the city or county inspector to review
+                    the completed work. Once the inspection is passed, NV Energy
+                    is cleared to restore power to your home. We then do a final
+                    walkthrough with you, labeling your new panel and ensuring
+                    you are 100% satisfied.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Final CTA -->
+    <div
+      class="mt-16 text-center bg-gray-800 text-white py-16 xl:py-24 rounded-lg shadow-xl"
+    >
+      <h2 class="text-3xl font-extrabold mb-4">
+        Ready for a Smooth, Professional Upgrade?
+      </h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+        Our proven process ensures your project is done right the first time.
+        Contact us to start with Step 1: your free in-home consultation.
+      </p>
+      <div class="mt-8">
+        <a
+          href="/company/company/contact-us/"
+          class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >Schedule Your Consultation</a
+        >
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+
+  /* Template-specific */
+  .page-header-process {
+    background-color: #111827;
+  } /* gray-900 */
+  .process-step-card {
+    border-color: #e5e7eb;
+  } /* gray-200 */
+  .process-step-number {
+    background-color: #374151;
+    color: #f1b725;
+  } /* gray-700 + accent */
+</style>

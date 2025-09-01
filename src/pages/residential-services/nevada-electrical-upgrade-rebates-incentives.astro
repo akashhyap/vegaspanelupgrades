@@ -1,0 +1,122 @@
+---
+// src/pages/nevada-electrical-upgrade-rebates-incentives.astro
+import { getImage } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+
+// Place an appropriate hero image at: src/assets/images/rebates-hero.jpg
+import rebatesHero from "../../assets/images/rebates.jpg";
+
+const pageTitle =
+  "Nevada Electrical Upgrade Rebates & Incentives | Vegas Panel Upgrades";
+const pageDescription =
+  "Discover available rebates and incentives for electrical panel upgrades and energy-efficient improvements in Las Vegas and Nevada. Save money on your project.";
+
+const hero = await getImage({ src: rebatesHero });
+const heroBg = `linear-gradient(rgba(4, 120, 87, 0.15), rgba(4, 120, 87, 0.5)), url(${hero.src})`; // emerald overlay + image
+---
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-gray-50 text-gray-800">
+    <!-- Page Header -->
+    <section class="page-header-rebates text-white" style={{ backgroundImage: heroBg }}>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+          Save Money with Electrical Upgrade Rebates &amp; Incentives
+        </h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-emerald-100">
+          Upgrading your home's electrical system may be more affordable than you think. Learn about potential savings available to Nevada homeowners.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="max-w-4xl mx-auto">
+
+          <div class="prose prose-lg max-w-none mb-12">
+            <p>
+              Federal, state, and local utility programs sometimes offer financial incentives to homeowners who make energy-efficient and safety-oriented improvements. An electrical panel upgrade is often a key component of these initiatives, as it enables the adoption of modern, energy-saving technologies like heat pumps and EV chargers.
+            </p>
+          </div>
+
+          <!-- Rebates Section -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Potential Programs for Las Vegas Homeowners</h2>
+
+            <!-- Rebate Card 1 -->
+            <div class="rebate-card p-8 rounded-lg border-l-4 mb-8">
+              <h3 class="text-2xl font-bold text-gray-800">Federal Tax Credits (Inflation Reduction Act)</h3>
+              <p class="text-gray-600 mt-3 text-lg">
+                The Inflation Reduction Act of 2022 includes significant tax credits for home energy efficiency improvements. An electrical panel upgrade may qualify for a tax credit <strong>up to $600</strong> if it is done in conjunction with other qualified energy property, such as a new heat pump or central air conditioner.
+              </p>
+              <ul class="mt-4 list-disc list-inside text-gray-700">
+                <li><strong>Credit Amount:</strong> 30% of the project cost, up to $600 for panel upgrades.</li>
+                <li><strong>Requirement:</strong> Must be placed in service with other eligible improvements.</li>
+                <li><strong>Action:</strong> Consult with your tax professional for details on how to claim this credit.</li>
+              </ul>
+            </div>
+
+            <!-- Rebate Card 2 -->
+            <div class="rebate-card p-8 rounded-lg border-l-4">
+              <h3 class="text-2xl font-bold text-gray-800">NV Energy Programs (When Available)</h3>
+              <p class="text-gray-600 mt-3 text-lg">
+                NV Energy periodically offers rebate programs to encourage energy efficiency. While specific programs for panel upgrades can vary, they often have rebates for related items that a new panel enables, such as:
+              </p>
+              <ul class="mt-4 list-disc list-inside text-gray-700">
+                <li><strong>Smart Thermostats:</strong> Upgrading your HVAC system often goes hand-in-hand with a panel upgrade.</li>
+                <li><strong>Pool Pumps:</strong> Rebates for energy-efficient variable-speed pool pumps.</li>
+                <li><strong>EV Charger Installation:</strong> Future programs may offer incentives for home charging infrastructure.</li>
+              </ul>
+              <p class="text-gray-600 mt-4">
+                We stay up-to-date on the latest NV Energy offerings and can help you identify any applicable rebates for your project.
+              </p>
+            </div>
+          </div>
+
+          <!-- Disclaimer -->
+          <div class="my-16 disclaimer-box p-6 rounded-lg">
+            <p class="font-bold">Important Disclaimer:</p>
+            <p class="mt-2">
+              Rebate programs and tax laws are subject to change. The information provided here is for informational purposes only and does not constitute tax advice. We strongly recommend consulting with a qualified tax professional and checking the official NV Energy website for the most current information on available incentives.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <!-- Final CTA -->
+     <div class="text-center bg-gray-800 text-white py-16 xl:py-24 rounded-lg shadow-xl">
+        <h2 class="text-3xl font-extrabold">Let's Maximize Your Investment</h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          A panel upgrade is a smart financial move. We can help you plan a project that not only improves your home's safety but may also qualify for valuable savings.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/company/company/contact-us/"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Get a Free Consultation &amp; Quote
+          </a>
+        </div>
+      </div>
+  </main>
+</Layout>
+
+<style>
+
+  /* Accent utilities (scoped) */
+  .bg-accent { background-color: #f1b725; } /* amber-400 */
+  .text-accent { color: #f1b725; }
+  .border-accent { border-color: #f1b725; }
+  .hover\:bg-accent-dark:hover { background-color: #F59E0B; } /* amber-500 */
+  .ring-accent { --tw-ring-color: #f1b725; }
+
+  /* Template-specific */
+  .page-header-rebates {
+    background-color: #047857; /* emerald-800 fallback */
+    background-size: cover;
+    background-position: center;
+  }
+  .rebate-card { background-color: #F0FDF4; border-left-color: #22C55E; }
+  .disclaimer-box { background-color: #FEF2F2; color: #991B1B; }
+</style>

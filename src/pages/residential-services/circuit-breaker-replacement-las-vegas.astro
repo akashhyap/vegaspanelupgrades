@@ -1,0 +1,169 @@
+---
+// src/pages/circuit-breaker-replacement-installation.astro
+import Layout from "../../layouts/Layout.astro";
+import breakerHero from "../../assets/images/breaker-panel.jpg";
+import { getImage } from "astro:assets";
+
+const pageTitle = "Circuit Breaker Replacement & Installation | Las Vegas, NV";
+const pageDescription =
+  "Professional circuit breaker replacement and new circuit installation services in Las Vegas. We fix faulty breakers and add dedicated circuits for new appliances.";
+
+const hero = await getImage({ src: breakerHero });
+const heroBg = `linear-gradient(rgba(75, 85, 99, 0.2), rgba(75, 85, 99, 0.8)), url(${hero.src})`;
+---
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section class="page-header-breaker text-white" style={{ backgroundImage: heroBg }}>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            Circuit Breaker Replacement &amp; Installation
+          </h1>
+          <p class="text-lg md:text-xl mb-8 text-gray-200">
+            From fixing faulty breakers that won't reset to installing new dedicated circuits for your appliances, we provide safe and reliable solutions.
+          </p>
+          <a
+            href="#contact-form-breaker"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+            >Request Service</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Your First Line of Defense Against Electrical Hazards</h2>
+            <p>
+              Circuit breakers are the essential safety devices in your electrical panel. Their job is to automatically shut off power to a circuit when they detect an overload or a short circuit, preventing overheating and potential fires. When a breaker wears out or fails, your home loses this critical protection.
+            </p>
+          </div>
+
+          <!-- Symptoms Section -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Signs of a Faulty Circuit Breaker</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="breaker-symptom-card p-6 rounded-lg border-l-4">
+                <h3 class="text-xl font-bold text-gray-800">Breaker Won't Reset</h3>
+                <p class="text-gray-600 mt-2">
+                  If a breaker trips and you cannot switch it back on, or it immediately trips again with nothing plugged in, the breaker itself may have failed internally.
+                </p>
+              </div>
+              <div class="breaker-symptom-card p-6 rounded-lg border-l-4">
+                <h3 class="text-xl font-bold text-gray-800">Visible Damage or Burning Smell</h3>
+                <p class="text-gray-600 mt-2">
+                  Any signs of melting, scorching, or a distinct burning smell from your panel indicate a serious problem that requires immediate professional attention.
+                </p>
+              </div>
+              <div class="breaker-symptom-card p-6 rounded-lg border-l-4">
+                <h3 class="text-xl font-bold text-gray-800">Breaker is Hot to the Touch</h3>
+                <p class="text-gray-600 mt-2">
+                  While breakers can be slightly warm during heavy use, a breaker that is noticeably hot to the touch is a sign of a bad connection or an internal fault.
+                </p>
+              </div>
+              <div class="breaker-symptom-card p-6 rounded-lg border-l-4">
+                <h3 class="text-xl font-bold text-gray-800">Age and Wear</h3>
+                <p class="text-gray-600 mt-2">
+                  Circuit breakers, especially in older panels, can simply wear out after decades of service and lose their ability to function correctly, even if they look fine.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Our Services Section -->
+          <div class="my-16 breaker-solution-box p-10 rounded-lg">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-6">Our Circuit Breaker Services</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">Faulty Breaker Replacement</h3>
+                <p class="text-gray-600 mt-3">
+                  We quickly diagnose and replace individual faulty or worn-out circuit breakers, restoring safety and functionality to your electrical system. We carry a wide range of breaker types to match your specific panel.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">New Dedicated Circuit Installation</h3>
+                <p class="text-gray-600 mt-3">
+                  Need a new outlet for a high-power appliance like a treadmill, microwave, or window AC unit? We can install a new, dedicated circuit and breaker to provide the power you need without overloading your existing circuits.
+                </p>
+              </div>
+            </div>
+            <p class="text-center text-gray-700 mt-8 text-lg">
+              <strong>Note:</strong> If multiple breakers are failing or your panel is full, the underlying issue may be the panel itself. In these cases, a full
+              <a href="/" class="text-accent font-semibold hover:underline">panel upgrade</a>
+              is often the safest and most cost-effective long-term solution.
+            </p>
+          </div>         
+      </div>
+    </div>
+
+     <!-- Final CTA Form -->
+     <div id="contact-form-breaker" class="bg-gray-800 text-white py-16 xl:py-24">
+        <h2 class="text-3xl font-extrabold text-center">Need Breaker Service?</h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto text-center">
+          Don't wait on a faulty breaker. Contact our licensed electricians for fast, reliable service in the Las Vegas area.
+        </p>
+        <form class="mt-8 max-w-xl mx-auto">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="name-breaker" class="sr-only">Name</label>
+              <input
+                type="text"
+                id="name-breaker"
+                placeholder="Your Name"
+                class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+              />
+            </div>
+            <div>
+              <label for="phone-breaker" class="sr-only">Phone</label>
+              <input
+                type="tel"
+                id="phone-breaker"
+                placeholder="Phone Number"
+                class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+              />
+            </div>
+          </div>
+          <div class="mt-6">
+            <label for="message-breaker" class="sr-only">Message</label>
+            <textarea
+              id="message-breaker"
+              placeholder="Briefly describe your issue..."
+              rows="4"
+              class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+            ></textarea>
+          </div>
+          <div class="mt-8 text-center">
+            <button
+              type="submit"
+              class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+            >
+              Request Service Call
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+   /* Accent utilities (scoped) */
+  .bg-accent { background-color: #f1b725; } /* amber-400 */
+  .text-accent { color: #f1b725; }
+  .border-accent { border-color: #f1b725; }
+  .hover\:bg-accent-dark:hover { background-color: #F59E0B; } /* amber-500 */
+  .ring-accent { --tw-ring-color: #f1b725; }
+
+  /* Template-specific */
+  .page-header-breaker {
+    background-color: #4B5563; /* gray-600 fallback */
+    background-size: cover;
+    background-position: center;
+  }
+  .breaker-symptom-card { background-color: #FEF2F2; border-left-color: #EF4444; }
+  .breaker-solution-box { background-color: #F0F9FF; }
+</style>

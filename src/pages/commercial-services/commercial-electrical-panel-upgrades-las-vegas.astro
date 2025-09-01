@@ -1,0 +1,281 @@
+---
+// src/pages/commercial-electrical-panel-upgrades-las-vegas.astro
+import { getImage } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+// Import a local image asset (recommended: put the file at src/assets/commercial-building.jpg)
+import commercialpanel from "../../assets/images/commercial-panel.jpg";
+
+const hero = await getImage({ src: commercialpanel });
+const heroBg = `linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.65)), url(${hero.src})`;
+const pageTitle = "Commercial Electrical Panel Upgrades | Las Vegas, NV";
+const pageDescription =
+  "Licensed commercial electrical contractors in Las Vegas specializing in panel upgrades, three-phase power, and code compliance for businesses, retail, and warehouses.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section
+      class="page-header-commercial text-white"
+      style={{ backgroundImage: heroBg }}
+      aria-label="Commercial electrical services hero section"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            Commercial Electrical Panel Upgrades in Las Vegas
+          </h1>
+          <p class="text-lg md:text-xl mb-8 text-gray-200">
+            Powering Your Business for Success. We provide licensed,
+            code-compliant panel upgrades for retail, offices, warehouses, and
+            more, minimizing downtime and maximizing safety.
+          </p>
+          <a
+            href="#contact-form-commercial"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Schedule a Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Your Business Can't Afford Electrical Downtime
+            </h2>
+            <p>
+              For a business, an outdated or failing electrical panel isn't just
+              a safety hazard—it's a direct threat to your operations. Lost
+              power means lost productivity and lost revenue. We specialize in
+              providing robust, reliable electrical solutions for Las Vegas
+              businesses, ensuring your power system can handle your demands
+              today and in the future.
+            </p>
+          </div>
+
+          <!-- Services Grid -->
+          <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div
+                class="commercial-service-icon rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">Three-Phase Panel Upgrades</h3>
+              <p class="text-gray-600 mt-2">
+                We install and upgrade three-phase systems required for
+                high-demand commercial equipment, ensuring balanced loads and
+                reliable power.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div
+                class="commercial-service-icon rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.944A12.02 12.02 0 0012 22a12.02 12.02 0 009-1.056c.343-.344.65-.724.923-1.138a11.955 11.955 0 01-2.3-5.508 11.955 11.955 0 01.134-4.252z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">
+                Code Compliance &amp; Violation Corrections
+              </h3>
+              <p class="text-gray-600 mt-2">
+                We ensure your electrical system meets all Clark County
+                commercial codes, helping you pass inspections and avoid costly
+                fines.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div
+                class="commercial-service-icon rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">
+                Dedicated Circuits for Equipment
+              </h3>
+              <p class="text-gray-600 mt-2">
+                From commercial ovens to industrial machinery, we install
+                dedicated circuits to provide the stable power your essential
+                equipment needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Business Types Section -->
+          <div class="my-16">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">
+              Serving Businesses Across Las Vegas
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="bg-gray-50 p-6 rounded-lg text-center">
+                <h4 class="text-xl font-bold">
+                  Retail Stores &amp; Restaurants
+                </h4>
+                <p class="text-gray-600 mt-2">
+                  Power for POS systems, commercial kitchens, and specialty
+                  lighting.
+                </p>
+              </div>
+              <div class="bg-gray-50 p-6 rounded-lg text-center">
+                <h4 class="text-xl font-bold">
+                  Offices &amp; Medical Buildings
+                </h4>
+                <p class="text-gray-600 mt-2">
+                  Reliable power for server rooms, computer networks, and
+                  sensitive medical equipment.
+                </p>
+              </div>
+              <div class="bg-gray-50 p-6 rounded-lg text-center">
+                <h4 class="text-xl font-bold">Warehouses &amp; Workshops</h4>
+                <p class="text-gray-600 mt-2">
+                  Panel upgrades to handle heavy machinery, high-bay lighting,
+                  and welding equipment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Final CTA Form -->
+    <div
+      id="contact-form-commercial"
+      class="commercial-cta-section py-16 xl:py-24 rounded-lg"
+    >
+      <h2 class="text-3xl font-extrabold text-center text-gray-900">
+        Schedule Your Commercial Consultation
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto text-center">
+        Contact us to discuss your business's electrical needs. We provide
+        detailed proposals and work with you to minimize disruption to your
+        operations.
+      </p>
+      <form class="mt-8 max-w-xl mx-auto">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label for="name-commercial" class="sr-only">Name</label>
+            <input
+              type="text"
+              id="name-commercial"
+              placeholder="Your Name"
+              class="w-full p-3 rounded-md bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-accent focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="business-name" class="sr-only">Business Name</label>
+            <input
+              type="text"
+              id="business-name"
+              placeholder="Business Name"
+              class="w-full p-3 rounded-md bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-accent focus:outline-none"
+            />
+          </div>
+        </div>
+        <div class="mt-6">
+          <label for="phone-commercial" class="sr-only">Phone</label>
+          <input
+            type="tel"
+            id="phone-commercial"
+            placeholder="Phone Number"
+            class="w-full p-3 rounded-md bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-accent focus:outline-none"
+          />
+        </div>
+        <div class="mt-6">
+          <label for="message-commercial" class="sr-only">Message</label>
+          <textarea
+            id="message-commercial"
+            placeholder="Briefly describe your electrical needs..."
+            rows="4"
+            class="w-full p-3 rounded-md bg-white text-gray-900 border border-gray-300 focus:ring-2 focus:ring-accent focus:outline-none"
+          ></textarea>
+        </div>
+        <div class="mt-8 text-center">
+          <button
+            type="submit"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Request Consultation
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  }
+
+  /* Template-specific */
+  .page-header-commercial {
+    background-color: #111827; /* gradient+image applied inline on the element */
+    background-size: cover;
+    background-position: center;
+  }
+  .commercial-service-icon {
+    background-color: #f1b725;
+    color: #111827;
+  }
+  .commercial-cta-section {
+    background-color: #f3f4f6;
+  }
+</style>

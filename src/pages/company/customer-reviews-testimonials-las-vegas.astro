@@ -1,0 +1,249 @@
+---
+// src/pages/testimonials.astro
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import johnSImage from "../../assets/images/john-s.jpg";
+import mariaBImage from "../../assets/images/maria-b.jpg";
+import tomDImage from "../../assets/images/tom-d.jpg";
+
+const pageTitle = "Customer Reviews & Testimonials | Vegas Panel Upgrades";
+const pageDescription =
+  "Read reviews from satisfied customers in Las Vegas, Henderson, and Summerlin. See why we are the trusted choice for electrical panel upgrades.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-gray-100 text-gray-800">
+    <!-- Page Header -->
+    <section class="page-header-testimonials text-white">
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+          What Our Customers Are Saying
+        </h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
+          We're proud of our commitment to safety and quality. But don't just
+          take our word for it—see what homeowners across Las Vegas have to say.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial Card 1 -->
+          <div
+            class="testimonial-card p-8 rounded-lg shadow-lg border-t-4 border-accent"
+          >
+            <div class="flex items-center mb-4">
+              <Image
+                src={johnSImage}
+                alt="Customer John S."
+                class="w-12 h-12 rounded-full mr-4"
+                width={48}
+                height={48}
+              />
+              <div>
+                <p class="font-bold text-lg">John S.</p>
+                <p class="text-sm text-gray-500">Henderson, NV</p>
+              </div>
+            </div>
+            <div class="flex items-center text-yellow-400 mb-4">
+              <!-- 5 Stars -->
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+            </div>
+            <p class="text-gray-600 italic">
+              "Our old FPE panel was a major concern. The team was professional,
+              explained the entire process, and handled everything with the
+              city. Our home is safer, and we have total peace of mind. Highly
+              recommend!"
+            </p>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div
+            class="testimonial-card p-8 rounded-lg shadow-lg border-t-4 border-accent"
+          >
+            <div class="flex items-center mb-4">
+              <Image
+                src={mariaBImage}
+                alt="Customer Maria B."
+                class="w-12 h-12 rounded-full mr-4"
+                width={48}
+                height={48}
+              />
+              <div>
+                <p class="font-bold text-lg">Maria B.</p>
+                <p class="text-sm text-gray-500">Summerlin, NV</p>
+              </div>
+            </div>
+            <div class="flex items-center text-yellow-400 mb-4">
+              <!-- 5 Stars -->
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+            </div>
+            <p class="text-gray-600 italic">
+              "We needed to add an EV charger and our panel was full. Vegas
+              Panel Upgrades did a full 200-amp upgrade for us. They were clean,
+              on time, and the work passed inspection with no issues. Great
+              communication throughout."
+            </p>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div
+            class="testimonial-card p-8 rounded-lg shadow-lg border-t-4 border-accent"
+          >
+            <div class="flex items-center mb-4">
+              <Image
+                src={tomDImage}
+                alt="Customer Tom D."
+                class="w-12 h-12 rounded-full mr-4"
+                width={48}
+                height={48}
+              />
+              <div>
+                <p class="font-bold text-lg">Tom D.</p>
+                <p class="text-sm text-gray-500">North Las Vegas, NV</p>
+              </div>
+            </div>
+            <div class="flex items-center text-yellow-400 mb-4">
+              <!-- 5 Stars -->
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+            </div>
+            <p class="text-gray-600 italic">
+              "Our breakers were tripping constantly. They came out, diagnosed
+              the problem as an undersized panel, and gave us a fair quote. The
+              installation was smooth and now everything works perfectly."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div
+        class="mt-16 text-center bg-white py-16 xl:py-24 rounded-lg shadow-xl"
+      >
+        <h2 class="text-3xl font-extrabold text-gray-900">
+          Ready to Become Our Next Success Story?
+        </h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Join your neighbors in Las Vegas, Henderson, and Summerlin who trust
+          us for their home's electrical safety. Contact us for a free,
+          no-pressure estimate.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/company/company/contact-us/"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+            >Schedule Your Free Estimate</a
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    /* Accent utilities (scoped) */
+    .bg-accent {
+      background-color: #f1b725;
+    } /* amber-400 */
+    .text-accent {
+      color: #f1b725;
+    }
+    .border-accent {
+      border-color: #f1b725;
+    }
+    .hover\:bg-accent-dark:hover {
+      background-color: #f59e0b;
+    } /* amber-500 */
+    .ring-accent {
+      --tw-ring-color: #f1b725;
+    } /* Tailwind ring color var */
+
+    /* Testimonials template */
+    .page-header-testimonials {
+      background-color: #047857;
+    } /* emerald-800 */
+    .testimonial-card {
+      background-color: #ffffff;
+      border-color: #e5e7eb;
+    }
+    .testimonial-quote-icon {
+      color: #f1b725;
+    }
+  </style>
+</Layout>

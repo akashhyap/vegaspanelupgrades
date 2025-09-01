@@ -1,0 +1,150 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="circuit-breakers-page">
+    <!-- Page Header -->
+    <section class="page-header-diagnostic text-white py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl">
+          <p class="text-amber-300 font-bold">ELECTRICAL DIAGNOSTICS</p>
+          <h1 class="text-4xl md:text-5xl font-extrabold mt-2">
+            Why Do My Circuit Breakers Keep Tripping?
+          </h1>
+          <p class="mt-4 text-lg text-gray-200">
+            A tripping breaker is a safety feature doing its job. But if it
+            happens constantly, it's a sign of a deeper problem. Let's diagnose
+            the common causes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <p>
+              It's a familiar frustration: you're running the microwave and the
+              air conditioner, and suddenly, the power cuts out in half the
+              house. A constantly tripping circuit breaker is more than an
+              annoyance; it's your home's electrical system telling you that
+              something is wrong. There are three primary reasons this happens.
+            </p>
+          </div>
+
+          <!-- Causes Section -->
+          <div class="space-y-8">
+            <!-- Cause 1: Overloaded Circuit -->
+            <div class="bg-white p-8 rounded-lg shadow-lg diagnostic-card border-l-4">
+              <h2 class="text-2xl font-bold text-gray-900">
+                Cause #1: An Overloaded Circuit
+              </h2>
+              <p class="text-gray-600 mt-4 text-lg">
+                This is the most common reason for a tripped breaker. A circuit
+                is designed to handle a specific amount of electricity
+                (amperage). When you plug in and run too many high-power devices
+                on a single circuit, you exceed that limit, and the breaker
+                trips to prevent the wires from overheating.
+              </p>
+              <div class="mt-6 solution-box p-6 rounded-md">
+                <h4 class="font-bold text-gray-800">What to do:</h4>
+                <p class="text-gray-600 mt-2">
+                  Try unplugging some devices from the circuit and moving them
+                  to outlets in a different room. If you consistently overload
+                  circuits in your kitchen or with a space heater, you may need
+                  a dedicated circuit installed by an electrician.
+                </p>
+              </div>
+            </div>
+
+            <!-- Cause 2: Short Circuit -->
+            <div class="bg-white p-8 rounded-lg shadow-lg diagnostic-card border-l-4">
+              <h2 class="text-2xl font-bold text-gray-900">
+                Cause #2: A Short Circuit
+              </h2>
+              <p class="text-gray-600 mt-4 text-lg">
+                A short circuit is more serious. It occurs when a "hot" wire
+                touches a "neutral" wire, often due to faulty wiring in an
+                appliance or within your walls. This creates a surge of current
+                that causes the breaker to trip instantly and forcefully.
+              </p>
+              <div class="mt-6 solution-box p-6 rounded-md">
+                <h4 class="font-bold text-gray-800">What to do:</h4>
+                <p class="text-gray-600 mt-2">
+                  If a breaker trips immediately after you plug in a specific
+                  appliance, that appliance is likely the problem. However, if
+                  the cause isn't obvious, you have a wiring issue that requires
+                  a professional electrician to locate and repair safely.
+                </p>
+              </div>
+            </div>
+
+            <!-- Cause 3: A Failing Panel or Breaker -->
+            <div class="bg-white p-8 rounded-lg shadow-lg diagnostic-card border-l-4">
+              <h2 class="text-2xl font-bold text-gray-900">
+                Cause #3: A Failing Breaker or Outdated Panel
+              </h2>
+              <p class="text-gray-600 mt-4 text-lg">
+                Sometimes, the problem isn't what's plugged in—it's the panel
+                itself. Circuit breakers can wear out over time and trip without
+                being overloaded. More seriously, an old or undersized
+                electrical panel may not have the capacity for your home's total
+                power needs, leading to frequent trips even with normal usage.
+              </p>
+              <div class="mt-6 solution-box p-6 rounded-md">
+                <h4 class="font-bold text-gray-800">What to do:</h4>
+                <p class="text-gray-600 mt-2">
+                  If you've ruled out overloads and short circuits, it's a
+                  strong indication that your panel needs professional
+                  attention. This is one of the clearest <a
+                    href="/signs-you-need-new-electrical-panel-las-vegas"
+                    class="text-accent font-semibold hover:underline"
+                    >signs you need a new electrical panel</a
+                  >. An upgrade will provide the capacity your home needs and
+                  ensure its safety.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final CTA -->
+          <div
+            class="mt-16 text-center bg-gray-800 text-white p-10 rounded-lg shadow-xl"
+          >
+            <h2 class="text-3xl font-extrabold">
+              Stop the Guesswork. Get a Professional Diagnosis.
+            </h2>
+            <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+              If your breakers are tripping frequently, don't ignore the
+              problem. Our licensed Las Vegas electricians can diagnose the
+              issue and provide a safe, permanent solution.
+            </p>
+            <div class="mt-8">
+              <a
+                href="/company/company/contact-us/"
+                class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+                >Schedule a Service Call</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  /* Unique classes for this diagnostic template */
+  .page-header-diagnostic {
+    background-color: #1e40af; /* blue-800 */
+  }
+  .diagnostic-card {
+    border-left-color: #3b82f6; /* blue-500 */
+  }
+  .solution-box {
+    background-color: #f3f4f6; /* gray-100 */
+  }
+</style>

@@ -1,0 +1,228 @@
+---
+// src/pages/healthcare-medical-facility-electrical-las-vegas.astro
+import { getImage } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import healthcareHero from "../../assets/images/healthcare.jpg";
+
+const pageTitle =
+  "Healthcare & Medical Facility Electrical Services | Las Vegas";
+const pageDescription =
+  "Licensed electricians specializing in electrical services for healthcare and medical facilities in Las Vegas, including panel upgrades and critical power systems.";
+
+const hero = await getImage({ src: healthcareHero });
+const heroBg = `linear-gradient(rgba(6, 95, 70, 0.65), rgba(6, 95, 70, 0.65)), url(${hero.src})`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section
+      class="page-header-healthcare text-white"
+      style={{ backgroundImage: heroBg }}
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            Healthcare &amp; Medical Facility Electrical Services
+          </h1>
+          <p class="text-lg md:text-xl text-emerald-100">
+            Patient safety and equipment reliability are paramount. We provide
+            specialized electrical solutions for clinics and medical offices
+            that meet the stringent demands of the healthcare industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Compliance and Reliability: The Cornerstones of Healthcare
+              Electrical Systems
+            </h2>
+            <p>
+              Electrical systems in healthcare facilities are held to a higher
+              standard for a simple reason: lives depend on them. From powering
+              diagnostic imaging equipment to ensuring life-safety systems are
+              always online, there is no room for error. We are experienced in
+              navigating the complex requirements of the healthcare environment,
+              including the NFPA 99 Health Care Facilities Code, to deliver
+              solutions that prioritize patient and staff safety.
+            </p>
+          </div>
+
+          <!-- Solutions Grid -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Card 1 -->
+            <div class="healthcare-solution-card p-8 rounded-lg shadow-sm">
+              <div class="healthcare-icon mb-4">
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.944A12.02 12.02 0 0012 22a12.02 12.02 0 009-1.056c.343-.344.65-.724.923-1.138a11.955 11.955 0 01-2.3-5.508 11.955 11.955 0 01-.134-4.252z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold">
+                Critical Branch &amp; Life Safety Circuits
+              </h3>
+              <p class="text-gray-600 mt-2">
+                We design and install essential electrical systems that are
+                connected to backup power. This ensures that critical equipment,
+                egress lighting, and fire alarm systems remain operational
+                during a power outage.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="healthcare-solution-card p-8 rounded-lg shadow-sm">
+              <div class="healthcare-icon mb-4">
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold">
+                Isolated Ground for Sensitive Equipment
+              </h3>
+              <p class="text-gray-600 mt-2">
+                Diagnostic equipment like X-ray machines and patient monitoring
+                systems are highly sensitive to electrical noise. We install
+                isolated ground (IG) circuits to provide clean, stable power and
+                prevent interference that could affect readings.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="healthcare-solution-card p-8 rounded-lg shadow-sm">
+              <div class="healthcare-icon mb-4">
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold">
+                Panel Upgrades for New Medical Tech
+              </h3>
+              <p class="text-gray-600 mt-2">
+                As you add new, more advanced medical technology, your power
+                needs increase. We perform panel upgrades to provide the
+                necessary capacity for imaging equipment, lasers, and other
+                specialized medical devices.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="healthcare-solution-card p-8 rounded-lg shadow-sm">
+              <div class="healthcare-icon mb-4">
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold">
+                Backup Power &amp; UPS Integration
+              </h3>
+              <p class="text-gray-600 mt-2">
+                We integrate your electrical system with backup generators and
+                Uninterruptible Power Supply (UPS) units to ensure that your
+                most critical operations continue seamlessly during a utility
+                outage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final CTA -->
+      <div
+        id="contact-form-healthcare"
+        class="text-center bg-gray-800 text-white py-16 xl:py-24"
+      >
+        <h2 class="text-3xl font-extrabold">
+          Ensure Your Facility Meets the Highest Standards
+        </h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          The safety of your patients and staff is non-negotiable. Contact us
+          for a professional assessment of your medical facility's electrical
+          system.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/commercial-electrical-panel-upgrades-las-vegas#contact-form-commercial"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Request a Facility Assessment
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  }
+
+  /* Healthcare template */
+  .page-header-healthcare {
+    background-color: #065f46; /* emerald-900 fallback */
+    background-size: cover;
+    background-position: center;
+  }
+  .healthcare-solution-card {
+    background-color: #f9fafb;
+  } /* gray-50 */
+  .healthcare-icon {
+    color: #047857;
+  } /* emerald-800 */
+</style>

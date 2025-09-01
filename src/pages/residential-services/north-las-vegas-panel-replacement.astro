@@ -1,0 +1,240 @@
+---
+// src/pages/north-las-vegas-panel-replacement.astro
+import { getImage, Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import nlvSkyline from "../../assets/images/north-las-vegas-skyline.jpg";
+import fullPanelUpgradeImage from "../../assets/images/full-panel-upgrade.jpg";
+import safetyInspectionImage from "../../assets/images/safety-inspection.jpg";
+import codeComplianceImage from "../../assets/images/code-compliance.jpg";
+
+// Get the optimized image URL
+const optimizedImage = await getImage({ src: nlvSkyline });
+const backgroundImageUrl = `url(${optimizedImage.src})`;
+
+const pageTitle = "North Las Vegas Panel Replacement | Licensed Electricians";
+const pageDescription =
+  "Professional electrical panel replacement and upgrade services for North Las Vegas homeowners. We are your local, licensed, and insured electricians.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Location Hero Section -->
+    <section
+      class="location-hero-bg-nlv text-white"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), ${backgroundImageUrl}`,
+      }}
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+        <div class="max-w-3xl text-center mx-auto">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            North Las Vegas Electrical Panel Replacement
+          </h1>
+          <p class="text-lg md:text-xl mb-8 text-gray-200">
+            Safe, reliable, and fully permitted panel upgrades for homeowners in
+            North Las Vegas. We ensure your home's electrical system is modern
+            and secure.
+          </p>
+          <a
+            href="#contact-form-nlv"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Get Your NLV Estimate
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Your Go-To Electricians in North Las Vegas
+            </h2>
+            <p>
+              From the established neighborhoods to the new developments in
+              North Las Vegas, a reliable electrical panel is the backbone of a
+              safe home. Many older homes in the area still have undersized or
+              hazardous panels that can't keep up with today's power demands.
+              Our licensed electricians specialize in full panel replacements,
+              ensuring your home is up to code and ready for the future.
+            </p>
+          </div>
+
+          <!-- Why Upgrade in NLV -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="nlv-feature-card p-6 rounded-lg">
+              <h3 class="text-xl font-bold text-gray-800">
+                Power for a Growing Family
+              </h3>
+              <p class="text-gray-600 mt-2">
+                As your family and technology needs grow, so does your
+                electricity consumption. A modern 200-amp panel provides the
+                capacity you need for home offices, entertainment systems, and
+                smart home devices without the risk of overloads.
+              </p>
+            </div>
+            <div class="nlv-feature-card p-6 rounded-lg">
+              <h3 class="text-xl font-bold text-gray-800">
+                Safety and Peace of Mind
+              </h3>
+              <p class="text-gray-600 mt-2">
+                The most important reason for a panel replacement is safety. We
+                remove dangerous, outdated panels like FPE and Zinsco,
+                drastically reducing the risk of electrical fires and giving you
+                peace of mind.
+              </p>
+            </div>
+          </div>
+
+          <!-- Our NLV Services -->
+          <div class="my-16">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">
+              Our Panel Replacement Services in North Las Vegas
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+              <div>
+                <Image
+                  src={fullPanelUpgradeImage}
+                  alt="A new 200 amp electrical panel"
+                  class="rounded-lg shadow-md mx-auto mb-4"
+                  width={300}
+                  height={200}
+                  format="webp"
+                  quality={80}
+                />
+                <h4 class="text-xl font-bold">Full Panel Upgrades</h4>
+                <p class="text-gray-600 mt-2">
+                  Boost your home's capacity to 200 amps for modern power needs.
+                </p>
+              </div>
+              <div>
+                <Image
+                  src={safetyInspectionImage}
+                  alt="An electrician inspecting a panel"
+                  class="rounded-lg shadow-md mx-auto mb-4"
+                  width={300}
+                  height={200}
+                  format="webp"
+                  quality={80}
+                />
+                <h4 class="text-xl font-bold">Safety Inspections</h4>
+                <p class="text-gray-600 mt-2">
+                  Identify and address potential hazards in your current
+                  electrical panel.
+                </p>
+              </div>
+              <div>
+                <Image
+                  src={codeComplianceImage}
+                  alt="A permit document"
+                  class="rounded-lg shadow-md mx-auto mb-4"
+                  width={300}
+                  height={200}
+                  format="webp"
+                  quality={80}
+                />
+                <h4 class="text-xl font-bold">Code Compliance</h4>
+                <p class="text-gray-600 mt-2">
+                  We ensure all work is fully permitted and passes inspection in
+                  North Las Vegas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final CTA Form -->
+      <div
+        id="contact-form-nlv"
+        class="bg-gray-800 text-white py-16 xl:py-16 rounded-lg shadow-xl"
+      >
+        <h2 class="text-3xl font-extrabold text-center">
+          Get a Free Quote for Your North Las Vegas Home
+        </h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto text-center">
+          Fill out the form below or call us to schedule your free,
+          no-obligation estimate with a licensed electrician.
+        </p>
+        <form class="mt-8 max-w-xl mx-auto">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="name-nlv" class="sr-only">Name</label>
+              <input
+                type="text"
+                id="name-nlv"
+                placeholder="Your Name"
+                class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+              />
+            </div>
+            <div>
+              <label for="phone-nlv" class="sr-only">Phone</label>
+              <input
+                type="tel"
+                id="phone-nlv"
+                placeholder="Phone Number"
+                class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+              />
+            </div>
+          </div>
+          <div class="mt-6">
+            <label for="address-nlv" class="sr-only">Address</label>
+            <input
+              type="text"
+              id="address-nlv"
+              placeholder="Address in North Las Vegas"
+              class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+            />
+          </div>
+          <div class="mt-6">
+            <label for="message-nlv" class="sr-only">Message</label>
+            <textarea
+              id="message-nlv"
+              placeholder="Tell us about your project..."
+              rows="4"
+              class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+            ></textarea>
+          </div>
+          <div class="mt-8 text-center">
+            <button
+              type="submit"
+              class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+            >
+              Request My Free Estimate
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  }
+
+  /* North Las Vegas template */
+  .location-hero-bg-nlv {
+    background-size: cover;
+    background-position: center;
+  }
+  .nlv-feature-card {
+    background-color: #f3f4f6;
+  } /* gray-100 */
+</style>

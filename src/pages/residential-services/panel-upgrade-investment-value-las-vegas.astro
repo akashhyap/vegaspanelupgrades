@@ -1,0 +1,233 @@
+---
+// src/pages/panel-upgrade-investment-roi.astro
+import { getImage } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import investmentHero from "../../assets/images/investment-panelupgrade.jpg";
+
+const pageTitle = "Is a Panel Upgrade a Good Investment? | ROI & Home Value";
+const pageDescription =
+  "Discover the return on investment (ROI) of an electrical panel upgrade in Las Vegas, including increased home value, insurance savings, and enhanced safety.";
+
+const hero = await getImage({ src: investmentHero });
+const heroBg = `linear-gradient(rgba(17,94,89,0.45), rgba(17,94,89,0.15)), url(${hero.src})`; // teal overlay + image
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section
+      class="page-header-investment text-white"
+      style={{ backgroundImage: heroBg }}
+    >
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24 text-center"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+          Is an Electrical Panel Upgrade a Good Investment?
+        </h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-teal-100">
+          Beyond the immediate
+          <a
+            href="/cost-of-panel-upgrade-las-vegas/"
+            class="text-accent font-semibold hover:underline">cost</a
+          >, a panel upgrade offers a significant return on investment through
+          safety, home value, and future-readiness.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <p>
+              When considering a major home improvement project, it's natural to
+              think about the return on investment (ROI). While some upgrades
+              are purely cosmetic, an electrical panel upgrade is a foundational
+              investment that provides tangible returns in several key areas.
+              It's not just an expense; it's a strategic improvement to your
+              property's core infrastructure.
+            </p>
+          </div>
+
+          <!-- Investment Points Section -->
+          <div class="space-y-8">
+            <!-- Point 1: Home Value -->
+            <div
+              class="investment-card p-8 rounded-lg shadow-sm flex items-start"
+            >
+              <div
+                class="flex-shrink-0 investment-icon-container rounded-full w-16 h-16 flex items-center justify-center mr-6"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">
+                  Directly Increases Home Value
+                </h3>
+                <p class="text-gray-600 mt-3 text-lg">
+                  A modern, 200-amp electrical panel is a major selling point.
+                  For potential buyers, it signals that the home is
+                  well-maintained and ready for modern demands like EV chargers
+                  and smart home technology. It removes a major objection during
+                  home inspections and can lead to a higher final sale price.
+                </p>
+              </div>
+            </div>
+
+            <!-- Point 2: Insurance Savings -->
+            <div
+              class="investment-card p-8 rounded-lg shadow-sm flex items-start"
+            >
+              <div
+                class="flex-shrink-0 investment-icon-container rounded-full w-16 h-16 flex items-center justify-center mr-6"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.944A12.02 12.02 0 0012 22a12.02 12.02 0 009-1.056c.343-.344.65-.724.923-1.138a11.955 11.955 0 01-2.3-5.508 11.955 11.955 0 01.134-4.252z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">
+                  Lowers Your Homeowner's Insurance
+                </h3>
+                <p class="text-gray-600 mt-3 text-lg">
+                  Insurance companies are all about risk assessment. Replacing
+                  an old fuse box or a hazardous panel like an
+                  <a
+                    href="/dangers-federal-pacific-fpe-panels-las-vegas/"
+                    class="text-accent font-semibold hover:underline">FPE</a
+                  >
+                  or
+                  <a
+                    href="/zinsco-panel-dangers-las-vegas/"
+                    class="text-accent font-semibold hover:underline">Zinsco</a
+                  >
+                  model drastically reduces the risk of an electrical fire. Many
+                  insurers offer significant discounts for this proactive safety
+                  measure.
+                </p>
+              </div>
+            </div>
+
+            <!-- Point 3: Prevents Costly Repairs -->
+            <div
+              class="investment-card p-8 rounded-lg shadow-sm flex items-start"
+            >
+              <div
+                class="flex-shrink-0 investment-icon-container rounded-full w-16 h-16 flex items-center justify-center mr-6"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">
+                  Prevents Damage to Expensive Electronics
+                </h3>
+                <p class="text-gray-600 mt-3 text-lg">
+                  An old, unstable panel can deliver inconsistent power, causing
+                  surges that can damage sensitive electronics like computers,
+                  TVs, and smart appliances. A new panel provides clean, stable
+                  power that protects your valuable devices from premature
+                  failure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Final CTA -->
+    <div
+      class="text-center bg-gray-800 text-white py-16 xl:py-24"
+    >
+      <h2 class="text-3xl font-extrabold">
+        Invest in Your Home's Most Critical System
+      </h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+        An electrical panel upgrade is one of the smartest investments you can
+        make, offering returns in safety, value, and peace of mind. Contact us
+        to discuss how an upgrade can benefit your property.
+      </p>
+      <div class="mt-8">
+        <a
+          href="/company/company/contact-us/"
+          class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+        >
+          Get My Free Consultation
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  }
+
+  /* Template-specific */
+  .page-header-investment {
+    background-color: #115e59; /* teal-900 fallback behind the image+overlay */
+    background-size: cover;
+    background-position: center;
+  }
+  .investment-card {
+    background-color: #f9fafb;
+  }
+  .investment-icon-container {
+    background-color: #14b8a6;
+    color: #ffffff;
+  }
+</style>

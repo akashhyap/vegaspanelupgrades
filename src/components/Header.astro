@@ -40,7 +40,7 @@ const getLinkClass = (href) => {
       </div>
 
       <!-- Desktop Navigation -->
-      <nav class="desktop-nav space-x-2.5 xl:space-x-6 flex-grow justify-center">
+      <nav class="desktop-nav flex items-center space-x-3 xl:space-x-8 flex-grow justify-center">
         <!-- Home Security Systems -->
         <a
           href="/"
@@ -49,28 +49,110 @@ const getLinkClass = (href) => {
           Home
         </a>
         
-        <!-- Commercial CCTV -->
-        <!-- <a
-          href="/commercial-cctv-surveillance/"
-          class={getLinkClass("/commercial-cctv-surveillance/")}
-        >
-          Commercial CCTV
-        </a> -->
+        <!-- Residential Services with Mega Dropdown -->
+        <div class="nav-item relative group">
+          <button class="residential-services-btn text-base font-manrope transition-colors duration-300 text-dark hover:text-accent py-2 pb-4 flex items-center">
+            Residential Services
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="mega-dropdown fixed bg-white shadow-lg rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[9999]">
+            <div class="flex flex-wrap p-6">
+              <!-- Column 1: Core Services -->
+              <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-4 sm:mb-0">
+                <h3 class="text-base font-bold mb-4 border-b pb-2 border-gray-200">Core Services</h3>
+                <ul class="space-y-2">
+                  <li><a href="/residential-services/200-amp-panel-upgrades-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">200 Amp Panel Upgrades</a></li>
+                  <li><a href="/residential-services/circuit-breaker-replacement-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Circuit Breaker Replacement</a></li>
+                  <li><a href="/residential-services/fuse-box-to-circuit-breaker-conversion-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Fuse Box Conversion</a></li>
+                  <li><a href="/residential-services/whole-home-surge-protection-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Whole-Home Surge Protection</a></li>
+                  <li><a href="/residential-services/dedicated-circuit-installation-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Dedicated Circuit Installation</a></li>
+                  <li><a href="/residential-services/emergency-electrical-panel-repair-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Emergency Panel Repair</a></li>
+                </ul>
+              </div>
+              <!-- Column 2: Information & Planning -->
+              <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-4 sm:mb-0">
+                <h3 class="text-base font-bold mb-4 border-b pb-2 border-gray-200">Information & Planning</h3>
+                <ul class="space-y-2">
+                  <li><a href="/residential-services/signs-you-need-new-electrical-panel-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Signs You Need a New Panel</a></li>
+                  <li><a href="/residential-services/panel-upgrade-ac-unit-ev-charger-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Panel Upgrade Process</a></li>
+                  <li><a href="/residential-services/cost-of-panel-upgrade-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Cost of a Panel Upgrade</a></li>
+                  <li><a href="/residential-services/nevada-electrical-upgrade-rebates-incentives/" class="text-sm hover:text-accent transition-colors duration-200 block">Is It a Good Investment?</a></li>
+                  <li><a href="/residential-services/panel-upgrade-permit-clark-county-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Permit Requirements</a></li>
+                </ul>
+              </div>
+              <!-- Column 3: Locations -->
+              <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mx-auto sm:mx-0">
+                <h3 class="text-base font-bold mb-4 border-b pb-2 border-gray-200">Locations</h3>
+                <ul class="space-y-2">
+                  <li><a href="/residential-services/electrical-panel-upgrades-henderson/" class="text-sm hover:text-accent transition-colors duration-200 block">Henderson Services</a></li>
+                  <li><a href="/residential-services/summerlin-electrical-panel-services/" class="text-sm hover:text-accent transition-colors duration-200 block">Summerlin Services</a></li>
+                  <li><a href="/residential-services/north-las-vegas-panel-replacement/" class="text-sm hover:text-accent transition-colors duration-200 block">North Las Vegas Services</a></li>
+                  <li><a href="/residential-services/boulder-city-electrical-services/" class="text-sm hover:text-accent transition-colors duration-200 block">Boulder City Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <!-- Access Control Systems -->
-        <!-- <a
-          href="/access-control-systems/"
-          class={getLinkClass("/access-control-systems/")}
-        >
-          Access Control
-        </a> -->
+        <!-- Commercial Services with Mega Dropdown -->
+        <div class="nav-item relative group">
+          <button class="commercial-services-btn text-base font-manrope transition-colors duration-300 text-dark hover:text-accent py-2 pb-4 flex items-center">
+            Commercial Services
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="mega-dropdown fixed bg-white shadow-lg rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[9999]">
+            <div class="flex flex-wrap p-6">
+              <!-- Column 1: Core Commercial -->
+              <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-4 sm:mb-0">
+                <h3 class="text-base font-bold mb-4 border-b pb-2 border-gray-200">Core Commercial</h3>
+                <ul class="space-y-2">
+                  <li><a href="/commercial-services/commercial-electrical-panel-upgrades-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Commercial Panel Upgrades</a></li>
+                  <li><a href="/commercial-services/three-phase-panel-upgrades-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Three-Phase Power</a></li>
+                  <li><a href="/commercial-services/electrical-code-compliance-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Code Compliance</a></li>
+                  <li><a href="/commercial-services/commercial-panel-requirements-high-demand-equipment-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">High-Demand Equipment</a></li>
+                </ul>
+              </div>
+              <!-- Column 2: Mission-Critical -->
+              <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-4 sm:mb-0">
+                <h3 class="text-base font-bold mb-4 border-b pb-2 border-gray-200">Mission-Critical</h3>
+                <ul class="space-y-2">
+                  <li><a href="/commercial-services/mission-critical-electrical-services-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Mission-Critical Overview</a></li>
+                  <li><a href="/commercial-services/hotel-resort-electrical-panel-services-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Hotel & Resort Services</a></li>
+                  <li><a href="/commercial-services/data-center-server-room-power-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Data Center Power</a></li>
+                  <li><a href="/commercial-services/healthcare-medical-facility-electrical-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Healthcare Facilities</a></li>
+                  <li><a href="/commercial-services/zero-downtime-electrical-upgrade-planning-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Zero-Downtime Planning</a></li>
+                </ul>
+              </div>
+              <!-- Column 3: Specialized Industries -->
+              <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mx-auto sm:mx-0">
+                <h3 class="text-base font-bold mb-4 border-b pb-2 border-gray-200">Specialized Industries</h3>
+                <ul class="space-y-2">
+                  <li><a href="/commercial-services/retail-restaurant-electrical-panel-services-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Retail & Restaurants</a></li>
+                  <li><a href="/commercial-services/office-warehouse-panel-upgrades-las-vegas/" class="text-sm hover:text-accent transition-colors duration-200 block">Offices & Warehouses</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- About -->
         <a
-          href="/about/"
-          class={getLinkClass("/about/")}
+          href="/company/about-us/"
+          class={getLinkClass("/company/about-us/")}
         >
           About
+        </a>
+
+        <!-- Cost Guide -->
+        <a
+          href="/company/contact-us/"
+          class={getLinkClass("/company/company/contact-us/")}
+        >
+          Contact
         </a>
 
       </nav>
@@ -78,7 +160,7 @@ const getLinkClass = (href) => {
       <!-- Contact button - Now outside of nav -->
       <div class="desktop-contact-btn w-1/4 justify-end">
         <a
-          href="/contact-us/"
+          href="/company/contact-us/"
           class="flex items-center text-black text-base px-4 py-2 border hover:text-accent rounded-full font-poppins transition-colors duration-300"
         >
           Get Started
@@ -134,15 +216,114 @@ const getLinkClass = (href) => {
           Home
         </a>
 
+        <!-- Mobile Residential Services Dropdown -->
+        <div class="mobile-dropdown w-full">
+          <button 
+            class="mobile-dropdown-btn flex justify-between items-center w-full px-3 py-2 text-base font-semibold text-dark hover:text-accent hover:bg-gray-50 transition-colors duration-300"
+          >
+            <span>Residential Services</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="mobile-dropdown-content hidden pl-3 pr-1 border-l-2 border-gray-100 ml-3 mt-1">
+            <!-- Core Services -->
+            <div class="mb-4 mt-2">
+              <h4 class="px-2 py-1 font-semibold text-sm text-dark border-b border-gray-100">Core Services</h4>
+              <div class="mt-2">
+                <a href="/residential-services/200-amp-panel-upgrades-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">200 Amp Panel Upgrades</a>
+                <a href="/residential-services/circuit-breaker-replacement-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Circuit Breaker Replacement</a>
+                <a href="/residential-services/fuse-box-to-circuit-breaker-conversion-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Fuse Box Conversion</a>
+                <a href="/residential-services/whole-home-surge-protection-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Whole-Home Surge Protection</a>
+                <a href="/residential-services/dedicated-circuit-installation-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Dedicated Circuit Installation</a>
+                <a href="/residential-services/emergency-electrical-panel-repair-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Emergency Panel Repair</a>
+              </div>
+            </div>
+            
+            <!-- Information & Planning -->
+            <div class="mb-4">
+              <h4 class="px-2 py-1 font-semibold text-sm text-dark border-b border-gray-100">Information & Planning</h4>
+              <div class="mt-2">
+                <a href="/residential-services/signs-you-need-new-electrical-panel-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Signs You Need a New Panel</a>
+                <a href="/residential-services/panel-upgrade-ac-unit-ev-charger-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Panel Upgrade Process</a>
+                <a href="/residential-services/cost-of-panel-upgrade-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Cost of a Panel Upgrade</a>
+                <a href="/residential-services/nevada-electrical-upgrade-rebates-incentives/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Is It a Good Investment?</a>
+                <a href="/residential-services/panel-upgrade-permit-clark-county-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Permit Requirements</a>
+              </div>
+            </div>
+            
+            <!-- Locations -->
+            <div class="mb-3">
+              <h4 class="px-2 py-1 font-semibold text-sm text-dark border-b border-gray-100">Locations</h4>
+              <div class="mt-2">
+                <a href="/residential-services/electrical-panel-upgrades-henderson/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Henderson Services</a>
+                <a href="/residential-services/summerlin-electrical-panel-services/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Summerlin Services</a>
+                <a href="/residential-services/north-las-vegas-panel-replacement/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">North Las Vegas Services</a>
+                <a href="/residential-services/boulder-city-electrical-services/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Boulder City Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commercial Services Dropdown -->
+        <div class="mb-4 relative">
+          <button class="mobile-commercial-dropdown-btn w-full flex justify-between items-center px-3 py-2 text-base font-semibold text-dark hover:text-accent transition-colors duration-300">
+            <span>Commercial Services</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="mobile-commercial-dropdown-content hidden pl-3 pr-1 border-l-2 border-gray-100 ml-3 mt-1">
+            <!-- Core Commercial -->
+            <div class="mb-4 mt-2">
+              <h4 class="px-2 py-1 font-semibold text-sm text-dark border-b border-gray-100">Core Commercial</h4>
+              <div class="mt-2">
+                <a href="/commercial-services/commercial-electrical-panel-upgrades-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Commercial Panel Upgrades</a>
+                <a href="/commercial-services/three-phase-panel-upgrades-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Three-Phase Power</a>
+                <a href="/commercial-services/electrical-code-compliance-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Code Compliance</a>
+                <a href="/commercial-services/commercial-panel-requirements-high-demand-equipment-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">High-Demand Equipment</a>
+              </div>
+            </div>
+            
+            <!-- Mission-Critical -->
+            <div class="mb-4">
+              <h4 class="px-2 py-1 font-semibold text-sm text-dark border-b border-gray-100">Mission-Critical</h4>
+              <div class="mt-2">
+                <a href="/commercial-services/mission-critical-electrical-services-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Mission-Critical Overview</a>
+                <a href="/commercial-services/hotel-resort-electrical-panel-services-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Hotel & Resort Services</a>
+                <a href="/commercial-services/data-center-server-room-power-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Data Center Power</a>
+                <a href="/commercial-services/healthcare-medical-facility-electrical-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Healthcare Facilities</a>
+                <a href="/commercial-services/zero-downtime-electrical-upgrade-planning-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Zero-Downtime Planning</a>
+              </div>
+            </div>
+            
+            <!-- Specialized Industries -->
+            <div class="mb-3">
+              <h4 class="px-2 py-1 font-semibold text-sm text-dark border-b border-gray-100">Specialized Industries</h4>
+              <div class="mt-2">
+                <a href="/commercial-services/retail-restaurant-electrical-panel-services-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Retail & Restaurants</a>
+                <a href="/commercial-services/office-warehouse-panel-upgrades-las-vegas/" class="block px-2 py-1.5 text-sm text-dark hover:text-accent">Offices & Warehouses</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <a
-          href="/about/"
+          href="/company/about-us/"
           class="block px-3 py-2 text-base font-semibold text-dark hover:text-accent hover:bg-gray-50 transition-colors duration-300"
         >
           About
         </a>
 
         <a
-          href="/contact-us/"
+          href="/company/contact-us/"
+          class="block px-3 py-2 text-base font-semibold text-dark hover:text-accent hover:bg-gray-50 transition-colors duration-300"
+        >
+          Contact
+        </a>
+
+        <a
+          href="/company/contact-us/"
           class="block px-3 py-2 text-base font-semibold text-dark hover:text-accent hover:bg-gray-50 transition-colors duration-300"
         >
           Get Started
@@ -152,6 +333,29 @@ const getLinkClass = (href) => {
   </div>
 </header>
 <style>
+  :root {
+    --header-height: 80px;
+  }
+  
+  /* Header transition styles */
+  header {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-hidden {
+    transform: translateY(-100%);
+  }
+  
   @media (min-width: 1600px) {
     .menu {
       max-width: 90%;
@@ -160,10 +364,126 @@ const getLinkClass = (href) => {
     }
   }
   
+  /* Mega dropdown positioning and styles */
+  .nav-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .mega-dropdown {
+    width: 100vw;
+    max-width: 1000px;
+    border-top: 3px solid #f59e0b; /* Accent color border */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  
+  /* Position fix to center the dropdown correctly */
+  .mega-dropdown {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    top: var(--header-height, 80px);
+  }
+  
+  /* Fix flickering by adding padding bridge from menu to dropdown */
+  .nav-item.group .mega-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Create an invisible bridge to the parent menu */
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+  }
+  
+  /* CSS to prevent flickering when hovering */
+  .nav-item.group {
+    padding-bottom: 5px; /* Extra padding to make hover easier */
+  }
+  
+  .mega-dropdown {
+    transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+  }
+  
+  .group:hover .mega-dropdown,
+  .mega-dropdown.hover-active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease, visibility 0s linear 0s;
+  }
+  
+  @media (min-width: 1024px) {
+    /* Remove all position changes on hover */
+    .nav-item {
+      position: relative;
+    }
+    
+    .mega-dropdown {
+      width: 96vw;
+      max-width: 1000px;
+      position: fixed;
+      top: var(--header-height, 80px); /* Use a CSS variable for header height */
+      left: 50%;
+      transform: translateX(-50%);
+      transform-origin: top center;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .group:hover .mega-dropdown {
+      width: 96vw;
+      left: 0;
+      transform: none;
+    }
+  }
+  
+  /* Make columns visible on all screen sizes */
+  .mega-dropdown .flex-wrap {
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Responsive column layout for the mega dropdown */
+  @media (max-width: 767px) {
+    .mega-dropdown .flex-wrap {
+      flex-direction: column;
+    }
+  }
+  
+  /* Mobile dropdown specific styles */
+  .mobile-dropdown-btn svg {
+    transition: transform 0.3s ease;
+  }
+  
+  .mobile-dropdown-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .mobile-dropdown-content:not(.hidden) {
+    max-height: 1000px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Ensure vertical alignment of all links */
+  .desktop-nav > a,
+  .desktop-nav .nav-item > button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  
   /* Custom breakpoint for mobile menu */
   @media (min-width: 1024px) {
     .desktop-nav {
       display: flex;
+      align-items: center;
     }
     .desktop-contact-btn {
       display: flex;
@@ -184,6 +504,17 @@ const getLinkClass = (href) => {
       display: block;
       margin-left: auto;
     }
+    
+    /* Fix for mobile menu scrolling */
+    .mobile-menu.hidden {
+      display: none;
+    }
+    
+    .mobile-menu:not(.hidden) {
+      display: block;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
   }
 </style>
 <script>
@@ -191,69 +522,192 @@ const getLinkClass = (href) => {
   document.addEventListener("DOMContentLoaded", function () {
     const mobileMenuButton = document.querySelector(".mobile-menu-button");
     const mobileMenu = document.querySelector(".mobile-menu");
+    const mobileDropdownBtn = document.querySelector(".mobile-dropdown-btn");
+    const mobileDropdownContent = document.querySelector(".mobile-dropdown-content");
+    const mobileCommercialDropdownBtn = document.querySelector(".mobile-commercial-dropdown-btn");
+    const mobileCommercialDropdownContent = document.querySelector(".mobile-commercial-dropdown-content");
     const header = document.getElementById("site-header");
-    let lastScrollY = window.scrollY;
-    let ticking = false;
+    const dropdownArrow = mobileDropdownBtn ? mobileDropdownBtn.querySelector("svg") : null;
+    const commercialDropdownArrow = mobileCommercialDropdownBtn ? mobileCommercialDropdownBtn.querySelector("svg") : null;
+    
+    // Set up dropdown menu management
+    const setupMegaDropdown = () => {
+      const header = document.querySelector('header');
+      const menuItems = document.querySelectorAll(".nav-item.group");
+      let hoverTimeout = null;
+      let activeDropdown: Element | null = null;
+      
+      if (!header || !menuItems.length) return;
+      
+      // Set the CSS variable with actual header height
+      const headerHeight = header.getBoundingClientRect().height;
+      document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+      
+      // Function to close all dropdowns
+      const closeAllDropdowns = () => {
+        menuItems.forEach(menuItem => {
+          const dropdown = menuItem.querySelector('.mega-dropdown');
+          if (dropdown) {
+            dropdown.classList.remove('hover-active');
+          }
+        });
+      };
+      
+      menuItems.forEach(item => {
+        const dropdown = item.querySelector('.mega-dropdown');
+        if (!dropdown) return;
+        
+        // When hovering on a menu item
+        item.addEventListener('mouseenter', () => {
+          // Clear any pending timeout
+          if (hoverTimeout) clearTimeout(hoverTimeout);
+          
+          // Close all other dropdowns first
+          closeAllDropdowns();
+          
+          // Open this dropdown
+          dropdown.classList.add('hover-active');
+          activeDropdown = dropdown;
+        });
+        
+        item.addEventListener('mouseleave', () => {
+          hoverTimeout = setTimeout(() => {
+            dropdown.classList.remove('hover-active');
+            activeDropdown = null;
+          }, 200); // Small delay to prevent accidental close
+        });
+        
+        // Handle mouse movements within dropdown
+        dropdown.addEventListener('mouseenter', () => {
+          if (hoverTimeout) clearTimeout(hoverTimeout);
+          dropdown.classList.add('hover-active');
+          activeDropdown = dropdown;
+        });
+        
+        dropdown.addEventListener('mouseleave', () => {
+          hoverTimeout = setTimeout(() => {
+            dropdown.classList.remove('hover-active');
+            activeDropdown = null;
+          }, 200);
+        });
+      });
+      
+      // Close dropdown when clicking elsewhere on the page
+      document.addEventListener('click', (event) => {
+        const isMenuClick = Array.from(menuItems).some(item => item.contains(event.target));
+        if (!isMenuClick && activeDropdown) {
+          activeDropdown.classList.remove('hover-active');
+          activeDropdown = null;
+        }
+      });
+    };
+    
+    // Run setup once and on window resize
+    setupMegaDropdown();
+    window.addEventListener('resize', setupMegaDropdown);
 
     // Mobile menu toggle
-    mobileMenuButton.addEventListener("click", function () {
-      mobileMenu.classList.toggle("hidden");
-    });
+    if (mobileMenuButton) {
+      mobileMenuButton.addEventListener("click", function () {
+        if (mobileMenu) {
+          mobileMenu.classList.toggle("hidden");
+        }
+      });
+    }
 
-    // Close mobile menu when clicking outside
+    // Mobile dropdown menu toggle for residential
+    if (mobileDropdownBtn && mobileDropdownContent) {
+      mobileDropdownBtn.addEventListener("click", function () {
+        mobileDropdownContent.classList.toggle("hidden");
+        if (dropdownArrow) {
+          dropdownArrow.classList.toggle("rotate-180");
+        }
+      });
+    }
+    
+    // Mobile dropdown menu toggle for commercial
+    if (mobileCommercialDropdownBtn && mobileCommercialDropdownContent) {
+      mobileCommercialDropdownBtn.addEventListener("click", function () {
+        mobileCommercialDropdownContent.classList.toggle("hidden");
+        if (commercialDropdownArrow) {
+          commercialDropdownArrow.classList.toggle("rotate-180");
+        }
+      });
+    }
+
+    // Close mobile menu and dropdowns when clicking outside
     document.addEventListener("click", function (event) {
+      if (!(event.target instanceof Element)) return;
+      
+      // Close menu when clicking outside of it
       if (
-        !mobileMenu.contains(event.target) &&
-        !mobileMenuButton.contains(event.target) &&
-        !mobileMenu.classList.contains("hidden")
+        mobileMenu &&
+        !mobileMenu.classList.contains("hidden") &&
+        !event.target.closest(".mobile-menu") &&
+        !event.target.closest(".mobile-menu-button")
       ) {
         mobileMenu.classList.add("hidden");
       }
-    });
-
-    // Close mobile menu when window is resized to desktop size
-    window.addEventListener("resize", function () {
-      if (window.innerWidth >= 1024 && !mobileMenu.classList.contains("hidden")) {
-        mobileMenu.classList.add("hidden");
+      
+      // Close residential dropdown when clicking outside of it
+      if (
+        mobileDropdownContent &&
+        !mobileDropdownContent.classList.contains("hidden") &&
+        !event.target.closest(".mobile-dropdown-btn") &&
+        !event.target.closest(".mobile-dropdown-content")
+      ) {
+        mobileDropdownContent.classList.add("hidden");
+        if (dropdownArrow) {
+          dropdownArrow.classList.remove("rotate-180");
+        }
+      }
+      
+      // Close commercial dropdown when clicking outside of it
+      if (
+        mobileCommercialDropdownContent &&
+        !mobileCommercialDropdownContent.classList.contains("hidden") &&
+        !event.target.closest(".mobile-commercial-dropdown-btn") &&
+        !event.target.closest(".mobile-commercial-dropdown-content")
+      ) {
+        mobileCommercialDropdownContent.classList.add("hidden");
+        if (commercialDropdownArrow) {
+          commercialDropdownArrow.classList.remove("rotate-180");
+        }
       }
     });
 
-    // Header scroll behavior
-    function handleScroll() {
+    // Handle window resize
+    window.addEventListener("resize", function () {
+      if (window.innerWidth >= 1024) {
+        if (mobileMenu) mobileMenu.classList.add("hidden");
+        if (mobileDropdownContent) mobileDropdownContent.classList.add("hidden");
+        if (dropdownArrow) dropdownArrow.classList.remove("rotate-180");
+      }
+    });
+
+    // Scroll event for sticky header
+    let lastScrollY = window.scrollY;
+    
+    window.addEventListener("scroll", function () {
+      if (!header) return;
+      
       const currentScrollY = window.scrollY;
       
       if (currentScrollY <= 0) {
-        // At the top of the page - use relative positioning
-        header.style.position = 'relative';
-        header.style.top = 'auto';
-        header.classList.remove('fixed', 'top-0', 'left-0', 'right-0');
+        // At the top of the page
+        header.classList.remove("sticky-header");
+        header.classList.remove("header-hidden");
       } else if (currentScrollY < lastScrollY) {
-        // Scrolling up - show fixed header
-        header.style.position = 'fixed';
-        header.style.top = '0';
-        header.classList.add('fixed', 'top-0', 'left-0', 'right-0');
-        header.classList.remove("translate-y-[-100%]");
-      } else if (currentScrollY > lastScrollY && currentScrollY > header.offsetHeight) {
-        // Scrolling down - hide header but keep it fixed
-        header.style.position = 'fixed';
-        header.style.top = '0';
-        header.classList.add('fixed', 'top-0', 'left-0', 'right-0');
-        header.classList.add("translate-y-[-100%]");
+        // Scrolling UP - show the header
+        header.classList.add("sticky-header");
+        header.classList.remove("header-hidden");
+      } else if (currentScrollY > lastScrollY) {
+        // Scrolling DOWN - hide the header
+        header.classList.add("sticky-header");
+        header.classList.add("header-hidden");
       }
       
       lastScrollY = currentScrollY;
-      ticking = false;
-    }
-
-    // Throttle scroll events
-    window.addEventListener("scroll", function() {
-      if (!ticking) {
-        window.requestAnimationFrame(function() {
-          handleScroll();
-          ticking = false;
-        });
-        ticking = true;
-      }
     });
   });
 </script>

@@ -1,0 +1,222 @@
+---
+// src/pages/data-center-server-room-power-las-vegas.astro
+import { getImage } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import datacenterHero from "../../assets/images/datacenter.jpg";
+
+const pageTitle = "Data Center & Server Room Power Solutions | Las Vegas, NV";
+const pageDescription =
+  "Expert electrical solutions for data centers and server rooms in Las Vegas, including UPS integration, isolated ground circuits, and redundant power systems.";
+
+const hero = await getImage({ src: datacenterHero });
+const heroBg = `linear-gradient(rgba(30, 58, 138, 0.15), rgba(30, 58, 138, 0.5)), url(${hero.src})`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section
+      class="page-header-datacenter text-white"
+      style={{ backgroundImage: heroBg }}
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            Data Center &amp; Server Room Power Solutions
+          </h1>
+          <p class="text-lg md:text-xl text-blue-100">
+            Your most valuable asset is your data. We provide the clean,
+            redundant, and reliable power infrastructure required to protect it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Power Quality is as Important as Power Availability
+            </h2>
+            <p>
+              For sensitive IT infrastructure, it's not enough to simply have
+              power; you need clean, stable, and uninterruptible power. Voltage
+              sags, harmonic distortion ("dirty power"), and momentary outages
+              can corrupt data, damage expensive hardware, and bring your
+              operations to a halt. We design and install robust electrical
+              systems that provide the highest level of power quality and
+              reliability for your data center or server room.
+            </p>
+          </div>
+
+          <!-- Solutions Grid -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Card 1 -->
+            <div class="solution-grid-card p-8 rounded-lg shadow-sm">
+              <div class="solution-grid-icon mb-4">
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.944A12.02 12.02 0 0012 22a12.02 12.02 0 009-1.056c.343-.344.65-.724.923-1.138a11.955 11.955 0 01-2.3-5.508 11.955 11.955 0 01-.134-4.252z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold">
+                UPS &amp; Backup Generator Integration
+              </h3>
+              <p class="text-gray-600 mt-2">
+                We install Uninterruptible Power Supply (UPS) systems for
+                instantaneous battery backup and Automatic Transfer Switches
+                (ATS) that seamlessly transition your facility to generator
+                power during an extended outage.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="solution-grid-card p-8 rounded-lg shadow-sm">
+              <div class="solution-grid-icon mb-4">
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold">
+                Isolated Ground &amp; Dedicated Circuits
+              </h3>
+              <p class="text-gray-600 mt-2">
+                To prevent electromagnetic interference ("noise") that can
+                disrupt data, we install isolated ground (IG) circuits and
+                dedicated power for each server rack, ensuring clean power
+                delivery directly to your hardware.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="solution-grid-card p-8 rounded-lg shadow-sm">
+              <div class="solution-grid-icon mb-4">
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold">
+                Power Distribution Units (PDUs)
+              </h3>
+              <p class="text-gray-600 mt-2">
+                We install and wire rack-mounted PDUs that provide intelligent
+                power distribution, circuit monitoring, and remote management
+                capabilities for your server racks.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="solution-grid-card p-8 rounded-lg shadow-sm">
+              <div class="solution-grid-icon mb-4">
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold">Cooling &amp; HVAC Power</h3>
+              <p class="text-gray-600 mt-2">
+                Your cooling system is just as critical as your servers. We
+                ensure your Computer Room Air Conditioning (CRAC) units have
+                robust, reliable power to prevent overheating.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div
+        id="contact-form-datacenter"
+        class="text-center bg-gray-800 text-white py-16 xl:py-24"
+      >
+        <h2 class="text-3xl font-extrabold">
+          Protect Your Critical Infrastructure
+        </h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          Your data's integrity depends on the quality of your power. Contact us
+          for a comprehensive assessment of your data center or server room's
+          electrical infrastructure.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/commercial-electrical-panel-upgrades-las-vegas#contact-form-commercial"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Request a Power Assessment
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  }
+
+  /* Data Center template */
+  .page-header-datacenter {
+    background-color: #1e3a8a; /* indigo-900 fallback */
+    background-size: cover;
+    background-position: center;
+  }
+  .solution-grid-card {
+    background-color: #f9fafb;
+  } /* gray-50 */
+  .solution-grid-icon {
+    color: #3730a3;
+  } /* indigo-800 */
+</style>

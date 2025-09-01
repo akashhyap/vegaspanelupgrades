@@ -1,0 +1,164 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import zinscoImage from "../assets/images/zinsco.jpg";
+import colorfulBreakerImage from "../assets/images/colorful-breaker.jpg";
+---
+
+<Layout>
+  <div class="zinsco-page">
+    <!-- Page Header -->
+    <section class="page-header-alert text-white py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl">
+          <p class="text-yellow-300 font-bold">HOMEOWNER SAFETY ALERT</p>
+          <h1 class="text-4xl md:text-5xl font-extrabold mt-2">
+            Zinsco Panels: A Known Fire Hazard Lurking in Plain Sight
+          </h1>
+          <p class="mt-4 text-lg text-gray-200">
+            Common in Las Vegas homes built before 1980, Zinsco and GTE-Sylvania
+            panels have a dangerous defect that requires immediate attention.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <p>
+              Along with Federal Pacific, <strong>Zinsco</strong> is another brand
+              of electrical panel that has been identified by experts as a significant
+              safety hazard. These panels, also sold under the name <strong
+                >GTE-Sylvania</strong
+              >, were popular for several decades but were eventually
+              discontinued due to major design flaws. If your home has a Zinsco
+              panel, it is not a matter of <em>if</em> it will fail, but <em
+                >when</em
+              >.
+            </p>
+          </div>
+
+          <!-- Why are they dangerous Section -->
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              What Makes Zinsco Panels So Dangerous?
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Defect 1 -->
+              <div class="alert-card border-l-4 p-6 rounded-md">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Breakers Melt to the Bus Bar
+                </h3>
+                <p class="text-gray-600 mt-2">
+                  The most critical flaw is that Zinsco breakers can appear to
+                  be off or tripped, but are actually still allowing power to
+                  flow. They often melt to the main aluminum bus bar, preventing
+                  them from tripping during an overload. This creates a
+                  continuous fire hazard that goes completely undetected.
+                </p>
+              </div>
+              <!-- Defect 2 -->
+              <div class="alert-card border-l-4 p-6 rounded-md">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Aluminum Components & Overheating
+                </h3>
+                <p class="text-gray-600 mt-2">
+                  Zinsco panels often used aluminum components which are prone
+                  to corrosion and overheating, especially when connected to
+                  copper wiring. This oxidation leads to poor connections,
+                  arcing, and is a significant fire risk.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Identification Section -->
+          <div class="my-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">
+              How to Identify a Zinsco or GTE-Sylvania Panel
+            </h2>
+            <div class="max-w-2xl mx-auto text-center">
+              <p class="text-lg text-gray-600 mb-8">
+                Look for branding on the panel door or inside cover. The
+                breakers themselves are also a key identifier.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                  <Image
+                    src={zinscoImage}
+                    alt="Zinsco brand logo on a panel"
+                    class="rounded-md w-full mb-3"
+                    width={400}
+                    height={300}
+                    format="webp"
+                    quality={80}
+                  />
+                  <p class="font-semibold">Look for the "Zinsco" name.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                  <Image
+                    src={colorfulBreakerImage}
+                    alt="Colorful Zinsco circuit breakers"
+                    class="rounded-md w-full mb-3"
+                    width={400}
+                    height={300}
+                    format="webp"
+                    quality={80}
+                  />
+                  <p class="font-semibold">
+                    The breakers are often brightly colored (red, blue, green,
+                    yellow).
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-600 mt-6">
+                Remember, these were also sold as <strong>GTE-Sylvania</strong> or
+                simply <strong>Sylvania</strong>. If you see any of these
+                indicators, it's crucial to have the panel inspected by a
+                professional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final CTA -->
+      <div
+        class="text-center bg-red-800 text-white py-16 xl:py-24 rounded-lg shadow-xl"
+      >
+        <h2 class="text-3xl font-extrabold">
+          A Zinsco Panel is a Ticking Time Bomb.
+        </h2>
+        <p class="mt-4 text-lg text-red-100 max-w-2xl mx-auto">
+          The only solution is a complete replacement. Don't risk your family's
+          safety. If you have or suspect you have a Zinsco panel, contact us for
+          an urgent safety inspection.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/company/company/contact-us/"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Request Urgent Inspection
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  /* Unique classes for this Zinsco alert template */
+  .page-header-alert {
+    background-color: #4a044e; /* purple-900 */
+  }
+  .alert-card {
+    background-color: #fef2f2; /* red-50 */
+    border-color: #fca5a5; /* red-300 */
+  }
+  .alert-icon-container {
+    background-color: #d946ef; /* fuchsia-500 */
+  }
+</style>

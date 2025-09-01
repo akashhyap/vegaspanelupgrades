@@ -1,0 +1,110 @@
+---
+// Import the Image component and panel image
+import { Image } from "astro:assets";
+import panelImage from "../assets/images/panel.jpg";
+import panelImage2 from "../assets/images/panel2.jpg";
+---
+
+<section class="about-section py-16 lg:py-24 xl:py-28 px-4 sm:px-6 xl:px-16">
+  <div class="container mx-auto">
+    <!-- About Header -->
+    <div
+      class="flex flex-col md:flex-row items-start justify-between mb-12 gap-8"
+    >
+      <!-- Left Column - Title -->
+      <div class="w-full md:w-1/2">
+        <span class="text-accent font-bold text-base font-manrope"
+          >Benefits of Panel Upgrades</span
+        > 
+        <h2 class="text-4xl md:text-5xl font-medium leading-[1.1] mt-2">
+          <span class="text-gray-400">A Smart </span>
+          <span class="font-bold text-black"
+            >Investment in Your Home's </span
+          >
+          <span class="text-gray-400">Safety & Value</span>
+        </h2>
+      </div>
+
+    
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="rounded-2xl overflow-hidden shadow-lg h-96">
+        <Image
+          src={panelImage}
+          alt="Electrical Panel Installation"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="rounded-2xl h-96 p-6 bg-white flex flex-col justify-center">
+        <div class="space-y-5">
+          <div class="flex items-start gap-3">
+            <span class="bg-accent p-1 rounded-full flex items-center justify-center w-6 h-6 flex-shrink-0 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            <div>
+              <h3 class="font-bold text-xl">Dramatically Increased Safety</h3>
+              <p class="text-gray-600">Modern panels with AFCI/GFCI breakers protect against fires and shock, and we eliminate dangerous FPE and Zinsco panels.</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-3">
+            <span class="bg-accent p-1 rounded-full flex items-center justify-center w-6 h-6 flex-shrink-0 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            <div>
+              <h3 class="font-bold text-xl">Increased Capacity for Modern Life</h3>
+              <p class="text-gray-600">A 200-amp upgrade is the new standard, allowing you to add EV chargers, hot tubs, and more without worry.</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-3">
+            <span class="bg-accent p-1 rounded-full flex items-center justify-center w-6 h-6 flex-shrink-0 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            <div>
+              <h3 class="font-bold text-xl">Higher Home Value</h3>
+              <p class="text-gray-600">A new, compliant panel is a major selling point, assuring buyers the home's electrical system is safe and modern.</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-3">
+            <span class="bg-accent p-1 rounded-full flex items-center justify-center w-6 h-6 flex-shrink-0 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            <div>
+              <h3 class="font-bold text-xl">Lower Homeowner's Insurance</h3>
+              <p class="text-gray-600">Many insurers offer discounts for homes with modern, safe electrical systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    background-color: #fdfdfd;
+  }
+
+  .text-accent {
+    color: #ffc107; /* Gold/yellow accent color based on site theme */
+  }
+
+  @media (min-width: 1299px) {
+    .about-section {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+</style>

@@ -1,0 +1,227 @@
+---
+// src/pages/three-phase-panel-upgrades-las-vegas.astro
+import Layout from "../../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+
+// Import images
+import restaurantBakeriesImg from "../../assets/images/restaurant-bakeries.jpg";
+import weldingImg from "../../assets/images/welding.jpg";
+import hvacImg from "../../assets/images/hvac.jpg";
+import industrialMotorImg from "../../assets/images/industrial-motor.jpg";
+
+const pageTitle = "Three-Phase Panel Upgrades for Businesses | Las Vegas, NV";
+const pageDescription =
+  "Learn about three-phase electrical panel upgrades for Las Vegas businesses. We are licensed contractors specializing in high-demand commercial power systems.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section class="page-header-3phase text-white">
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24 text-center"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+          Understanding Three-Phase Panel Upgrades
+        </h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-blue-100">
+          For businesses with high-power equipment, a three-phase electrical
+          system isn't a luxury—it's a necessity for efficiency and reliability.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              What is the Difference Between Single-Phase and Three-Phase Power?
+            </h2>
+            <p>
+              While most homes run on single-phase power, many commercial and
+              industrial facilities in Las Vegas require a more robust
+              three-phase system. The key difference lies in the delivery and
+              consistency of electrical power.
+            </p>
+          </div>
+
+          <!-- Comparison Grid -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Single-Phase Card -->
+            <div class="phase-comparison-card p-8 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="phase-icon mr-4">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    class="w-12 h-12"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold">Single-Phase Power</h3>
+              </div>
+              <p class="text-gray-600">
+                Standard for residential homes, this system uses two wires to
+                deliver power. The power delivery pulses, which is perfectly
+                fine for lighting and common household appliances.
+              </p>
+              <ul class="mt-4 list-disc list-inside text-gray-700">
+                <li>Ideal for: Homes, small offices.</li>
+                <li>Voltage: Typically 120V/240V.</li>
+                <li>Best for: Lighting, standard equipment.</li>
+              </ul>
+            </div>
+
+            <!-- Three-Phase Card -->
+            <div class="phase-comparison-card p-8 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="phase-icon mr-4">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    class="w-12 h-12"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold">Three-Phase Power</h3>
+              </div>
+              <p class="text-gray-600">
+                Common in commercial settings, this system uses three wires to
+                deliver a constant, uninterrupted flow of power. This is far
+                more efficient for running large, powerful motors and equipment.
+              </p>
+              <ul class="mt-4 list-disc list-inside text-gray-700">
+                <li>Ideal for: Restaurants, workshops, warehouses.</li>
+                <li>Voltage: Can support higher voltages.</li>
+                <li>Best for: Large motors, HVAC systems, commercial ovens.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Who Needs Three-Phase? -->
+          <div class="my-16 bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-6">
+              Which Las Vegas Businesses Need a Three-Phase Panel?
+            </h2>
+            <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-8">
+              If your business relies on any of the following, a three-phase
+              panel upgrade is likely necessary for safe and efficient
+              operation:
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <Image
+                  src={restaurantBakeriesImg}
+                  alt="Commercial kitchen equipment"
+                  width={200}
+                  height={150}
+                  class="rounded-lg mx-auto mb-3"
+                />
+                <p class="font-semibold">Restaurants &amp; Bakeries</p>
+              </div>
+              <div>
+                <Image
+                  src={weldingImg}
+                  alt="Welding equipment"
+                  width={200}
+                  height={150}
+                  class="rounded-lg mx-auto mb-3"
+                />
+                <p class="font-semibold">Auto Shops &amp; Fabricators</p>
+              </div>
+              <div>
+                <Image
+                  src={hvacImg}
+                  alt="Large commercial HVAC units"
+                  width={200}
+                  height={150}
+                  class="rounded-lg mx-auto mb-3"
+                />
+                <p class="font-semibold">Large HVAC Systems</p>
+              </div>
+              <div>
+                <Image
+                  src={industrialMotorImg}
+                  alt="Industrial motors and machinery"
+                  width={200}
+                  height={150}
+                  class="rounded-lg mx-auto mb-3"
+                />
+                <p class="font-semibold">Industrial Machinery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Final CTA -->
+    <div
+      class="text-center bg-gray-800 text-white py:16 xl:py-24 rounded-lg shadow-xl"
+    >
+      <h2 class="text-3xl font-extrabold">Unsure What Your Business Needs?</h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+        Our licensed commercial electricians can perform a full load calculation
+        and site assessment to determine the right power solution for your
+        business.
+      </p>
+      <div class="mt-8">
+        <a
+          href="/commercial-electrical-panel-upgrades-las-vegas/company/company/contact-us/-form-commercial"
+          class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+        >
+          Get a Professional Assessment
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  }
+
+  /* Template-specific */
+  .page-header-3phase {
+    background-color: #1e40af;
+  } /* blue-800 */
+  .phase-comparison-card {
+    background-color: #f9fafb;
+  } /* gray-50 */
+  .phase-icon {
+    color: #3b82f6;
+  } /* blue-500 */
+</style>

@@ -1,0 +1,197 @@
+---
+// src/pages/whole-home-surge-protection.astro
+import { getImage } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import surgeHero from "../../assets/images/surge-protection-hero.jpg";
+import surgeDevice from "../../assets/images/surge-device.jpg";
+
+const pageTitle = "Whole-Home Surge Protection | Las Vegas, NV";
+const pageDescription =
+  "Protect your entire home from power surges with a whole-home surge protector installed at your electrical panel. Essential for Las Vegas homeowners.";
+
+const heroImg = await getImage({ src: surgeHero });
+const deviceImg = await getImage({ src: surgeDevice });
+const heroBg = `linear-gradient(rgba(14, 116, 144, 0.15), rgba(14, 116, 144, 0.5)), url(${heroImg.src})`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section
+      class="page-header-surge text-white"
+      style={{ backgroundImage: heroBg }}
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 xl:py-24">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            Whole-Home Surge Protection: Your First Line of Defense
+          </h1>
+          <p class="text-lg md:text-xl text-cyan-100">
+            Power strips aren't enough. Protect every device in your home—from
+            your TV to your HVAC system—with a single, powerful surge protector
+            installed at your main panel.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Why Your Las Vegas Home is at Risk
+            </h2>
+            <p>
+              Power surges are sudden, powerful spikes in your home's electrical
+              voltage. While many people associate them with lightning, the vast
+              majority are generated internally from large appliances cycling on
+              and off, or externally from fluctuations in the NV Energy power
+              grid. These smaller, frequent surges degrade and destroy sensitive
+              electronics over time.
+            </p>
+          </div>
+
+          <!-- Threat vs Solution -->
+          <div class="grid lg:grid-cols-2 gap-8">
+            <div class="threat-card p-8 rounded-lg">
+              <h3 class="text-2xl font-bold text-red-900">
+                The Threat: What's at Risk?
+              </h3>
+              <p class="text-gray-700 mt-2">
+                Every modern electronic device contains microprocessors that are
+                highly vulnerable to surge damage.
+              </p>
+              <ul class="mt-4 space-y-2 text-red-800">
+                <li class="flex items-center">
+                  <span class="mr-2 font-bold">✗</span> Computers &amp; Laptops
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 font-bold">✗</span> Smart TVs &amp; Entertainment
+                  Systems
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 font-bold">✗</span> HVAC Systems &amp; Smart
+                  Thermostats
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 font-bold">✗</span> Refrigerators &amp; Kitchen
+                  Appliances
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2 font-bold">✗</span> EV Chargers
+                </li>
+              </ul>
+            </div>
+            <div class="protection-card p-8 rounded-lg">
+              <h3 class="text-2xl font-bold text-cyan-900">
+                The Solution: Layered Protection
+              </h3>
+              <p class="text-gray-700 mt-2">
+                A whole-home surge protector (Type 1 or Type 2 SPD) is installed
+                at your main electrical panel, stopping major external surges at
+                the source. This protects your entire home and works in tandem
+                with your smaller, point-of-use surge strips for complete
+                coverage.
+              </p>
+            </div>
+          </div>
+
+          <!-- How it Works -->
+          <div class="py-16">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-10">
+              How Does a Whole-Home Surge Protector Work?
+            </h2>
+            <div class="grid grid-cols-12 items-center gap-8">
+              <div class="flex-shrink-0 col-span-12 lg:col-span-5">
+                <img
+                  src={deviceImg.src}
+                  width={500}
+                  height={500}
+                  alt="A whole-home surge protector device"
+                  class="rounded-lg"
+                  loading="lazy"
+                />
+              </div>
+              <div class="prose prose-lg col-span-6 lg:col-span-7">
+                <p class="mb-6">
+                  A whole-home Surge Protection Device (SPD) is a small box that
+                  our licensed electricians install directly at your main
+                  electrical panel. It constantly monitors the incoming voltage
+                  from the utility line.
+                </p>
+                <p>
+                  When it detects a voltage spike that exceeds a safe level, it
+                  instantly diverts the excess energy safely into your home's
+                  grounding system. This entire process happens in nanoseconds,
+                  before the damaging surge can travel through your circuits and
+                  reach your valuable electronics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final CTA -->
+      <div
+        id="contact-form-surge"
+        class="text-center bg-gray-800 text-white py-16 xl:py-24"
+      >
+        <h2 class="text-3xl font-extrabold">
+          The Ultimate Insurance Policy for Your Electronics
+        </h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          A whole-home surge protector is the single best investment you can
+          make to protect thousands of dollars worth of equipment. It's an
+          essential addition to any modern home, especially when getting a
+          <a href="/company/company/contact-us/" class="text-accent font-semibold hover:underline"
+            >new electrical panel</a
+          >.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/company/company/contact-us/"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Get a Quote for Surge Protection
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  }
+
+  /* Surge Protection template */
+  .page-header-surge {
+    background-color: #0e7490; /* cyan-800 fallback */
+    background-size: cover;
+    background-position: center;
+  }
+  .protection-card {
+    background-color: #f0f9ff;
+  } /* light blue */
+  .threat-card {
+    background-color: #fff1f2;
+  } /* rose-50 */
+  .protection-icon {
+    color: #0891b2;
+  } /* cyan-600 */
+</style>

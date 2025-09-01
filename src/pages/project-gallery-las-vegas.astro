@@ -1,0 +1,221 @@
+---
+// src/pages/project-gallery.astro
+import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+
+// Import images
+import beforeFpeImage from '../assets/images/before_fpe.jpg';
+import afterFpeImage from '../assets/images/after-fpe.jpg';
+import beforeZinscoImage from '../assets/images/before-zinsco.jpg';
+import afterCleanInstallImage from '../assets/images/after-clean-install.jpg';
+import beforeFuseImage from '../assets/images/before-fuse.jpg';
+import afterBreakerPanelImage from '../assets/images/after-breaker-panel.jpg';
+
+const pageTitle = "Project Gallery | Vegas Panel Upgrades";
+const pageDescription =
+  "View before-and-after photos of our electrical panel upgrades and replacement projects in Las Vegas, Henderson, Summerlin, and more.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-gray-100 text-gray-800">
+    <!-- Page Header -->
+    <section class="page-header-gallery text-white">
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+          Our Work: Project Gallery
+        </h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
+          See the quality and craftsmanship that goes into every panel upgrade.
+          We transform dangerous, outdated panels into safe, modern, and
+          organized systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="gallery-card rounded-lg shadow-md overflow-hidden">
+            <div class="grid grid-cols-2">
+              <div class="gallery-image-container">
+                <Image
+                  src={beforeFpeImage}
+                  alt="Before: An old, dangerous FPE panel"
+                  class="w-full h-full object-cover"
+                  width={400}
+                  height={400}
+                />
+                <div class="gallery-image-label">BEFORE</div>
+              </div>
+              <div class="gallery-image-container">
+                <Image
+                  src={afterFpeImage}
+                  alt="After: A new, clean 200-amp panel"
+                  class="w-full h-full object-cover"
+                  width={400}
+                  height={400}
+                />
+                <div class="gallery-image-label">AFTER</div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">FPE Panel Replacement</h3>
+              <p class="text-sm text-gray-500 font-semibold">Henderson, NV</p>
+              <p class="text-gray-600 mt-3">
+                Removed a hazardous Federal Pacific panel and upgraded the home
+                to a safe, reliable 200-amp service to accommodate a new kitchen
+                remodel.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="gallery-card rounded-lg shadow-md overflow-hidden">
+            <div class="grid grid-cols-2">
+              <div class="gallery-image-container">
+                <Image
+                  src={beforeZinscoImage}
+                  alt="Before: An outdated Zinsco panel"
+                  class="w-full h-full object-cover"
+                  width={400}
+                  height={400}
+                />
+                <div class="gallery-image-label">BEFORE</div>
+              </div>
+              <div class="gallery-image-container">
+                <Image
+                  src={afterCleanInstallImage}
+                  alt="After: A new, organized electrical panel"
+                  class="w-full h-full object-cover"
+                  width={400}
+                  height={400}
+                />
+                <div class="gallery-image-label">AFTER</div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Zinsco Panel Upgrade</h3>
+              <p class="text-sm text-gray-500 font-semibold">Summerlin, NV</p>
+              <p class="text-gray-600 mt-3">
+                This homeowner needed more power for a new EV charger. We
+                replaced their dangerous Zinsco panel with a new 200-amp main
+                panel, providing ample safe capacity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="gallery-card rounded-lg shadow-md overflow-hidden">
+            <div class="grid grid-cols-2">
+              <div class="gallery-image-container">
+                <Image
+                  src={beforeFuseImage}
+                  alt="Before: An old, obsolete fuse box"
+                  class="w-full h-full object-cover"
+                  width={400}
+                  height={400}
+                />
+                <div class="gallery-image-label">BEFORE</div>
+              </div>
+              <div class="gallery-image-container">
+                <Image
+                  src={afterBreakerPanelImage}
+                  alt="After: A modern circuit breaker panel"
+                  class="w-full h-full object-cover"
+                  width={400}
+                  height={400}
+                />
+                <div class="gallery-image-label">AFTER</div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Fuse Box Conversion</h3>
+              <p class="text-sm text-gray-500 font-semibold">
+                North Las Vegas, NV
+              </p>
+              <p class="text-gray-600 mt-3">
+                Converted an original, 60-amp fuse box to a modern 150-amp
+                circuit breaker panel, dramatically improving the safety and
+                functionality of this older home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final CTA -->
+      <div
+        class="mt-16 text-center bg-white py-16 xl:py-24 rounded-lg shadow-xl"
+      >
+        <h2 class="text-3xl font-extrabold text-gray-900">
+          Let's Make Your Home Our Next Success Story
+        </h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Ready to see this level of quality and safety in your own home?
+          Contact us for a free, no-pressure estimate for your panel upgrade.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/company/company/contact-us/"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+            >Schedule Your Free Estimate</a
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  } /* Tailwind ring color var */
+
+  /* Gallery template */
+  .page-header-gallery {
+    background-color: #1f2937;
+  } /* gray-800 */
+  .gallery-card {
+    background-color: #ffffff;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  .gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  .gallery-image-container {
+    position: relative;
+  }
+  .gallery-image-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-bottom-right-radius: 0.375rem;
+  }
+</style>

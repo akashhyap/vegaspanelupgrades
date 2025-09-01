@@ -1,0 +1,219 @@
+---
+// src/pages/zero-downtime-electrical-upgrade-planning.astro
+import { getImage } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import methodologyHero from "../../assets/images/methodology-hero.jpg";
+
+const pageTitle = "Zero-Downtime Electrical Upgrade Planning | Las Vegas, NV";
+const pageDescription =
+  "Our methodology for zero-downtime electrical upgrade planning and execution for mission-critical facilities in Las Vegas, ensuring business continuity.";
+
+const hero = await getImage({ src: methodologyHero });
+const heroBg = `linear-gradient(rgba(31, 41, 55, 0.15), rgba(31, 41, 55, 0.5)), url(${hero.src})`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section
+      class="page-header-methodology text-white"
+      style={{ backgroundImage: heroBg }}
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            Our Methodology for Zero-Downtime Electrical Upgrades
+          </h1>
+          <p class="text-lg md:text-xl text-gray-300">
+            Successful mission-critical projects are the result of meticulous
+            planning, not luck. Discover our four-phase process for ensuring
+            business continuity during major electrical work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <p>
+              For a
+              <a
+                href="/hotel-resort-electrical-panel-services-las-vegas"
+                class="text-accent font-semibold hover:underline">hotel</a
+              >,
+              <a
+                href="/data-center-server-room-power-las-vegas"
+                class="text-accent font-semibold hover:underline">data center</a
+              >, or
+              <a
+                href="/healthcare-medical-facility-electrical-las-vegas"
+                class="text-accent font-semibold hover:underline"
+                >medical facility</a
+              >, an unplanned power outage is not an option. Our entire project
+              lifecycle is built around mitigating risk and ensuring your
+              operations continue uninterrupted. This requires a level of
+              planning that goes far beyond a standard commercial installation.
+            </p>
+          </div>
+
+          <!-- Phases Section -->
+          <div class="space-y-8">
+            <!-- Phase 1 -->
+            <div class="phase-card p-8 rounded-lg shadow-sm">
+              <div class="flex items-center">
+                <div
+                  class="phase-number flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mr-6"
+                >
+                  1
+                </div>
+                <h3 class="text-3xl font-bold text-gray-900">
+                  Phase 1: Discovery &amp; System Auditing
+                </h3>
+              </div>
+              <div class="mt-4 pl-24">
+                <p class="text-gray-600 text-lg">
+                  We begin with a comprehensive audit of your existing
+                  electrical infrastructure. This includes reviewing blueprints,
+                  tracing circuits, and performing load testing to understand
+                  your current power consumption patterns. We identify all
+                  critical loads and dependencies to create a detailed map of
+                  your system.
+                </p>
+              </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="phase-card p-8 rounded-lg shadow-sm">
+              <div class="flex items-center">
+                <div
+                  class="phase-number flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mr-6"
+                >
+                  2
+                </div>
+                <h3 class="text-3xl font-bold text-gray-900">
+                  Phase 2: Logistical &amp; Cutover Planning
+                </h3>
+              </div>
+              <div class="mt-4 pl-24">
+                <p class="text-gray-600 text-lg">
+                  This is the most critical phase. We develop a detailed Method
+                  of Procedure (MOP) that outlines every step of the upgrade.
+                  This plan includes scheduling work during low-impact,
+                  after-hours windows, arranging for temporary generators or
+                  bypass panels, and coordinating with all stakeholders,
+                  including your facility staff and NV Energy.
+                </p>
+              </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="phase-card p-8 rounded-lg shadow-sm">
+              <div class="flex items-center">
+                <div
+                  class="phase-number flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mr-6"
+                >
+                  3
+                </div>
+                <h3 class="text-3xl font-bold text-gray-900">
+                  Phase 3: Phased &amp; Controlled Execution
+                </h3>
+              </div>
+              <div class="mt-4 pl-24">
+                <p class="text-gray-600 text-lg">
+                  The upgrade is performed in carefully controlled phases
+                  according to the MOP. We utilize techniques like "hot
+                  cutovers" to move circuits from the old system to the new one
+                  with no interruption of power. Our licensed electricians work
+                  with precision and maintain constant communication with your
+                  on-site team.
+                </p>
+              </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="phase-card p-8 rounded-lg shadow-sm">
+              <div class="flex items-center">
+                <div
+                  class="phase-number flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mr-6"
+                >
+                  4
+                </div>
+                <h3 class="text-3xl font-bold text-gray-900">
+                  Phase 4: Verification &amp; Commissioning
+                </h3>
+              </div>
+              <div class="mt-4 pl-24">
+                <p class="text-gray-600 text-lg">
+                  After the new system is in place, we conduct rigorous testing
+                  to verify that all circuits are operating correctly and that
+                  redundant systems are functioning as designed. This includes
+                  load bank testing and failover tests of backup power systems.
+                  We provide full documentation and schematics for your new
+                  system upon completion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final CTA -->
+      <div
+        id="contact-form-methodology"
+        class="mt-16 text-center bg-gray-800 text-white p-10 rounded-lg shadow-xl"
+      >
+        <h2 class="text-3xl font-extrabold">
+          Trust Your Critical Systems to the Experts
+        </h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          Our meticulous planning and execution process is designed to give you
+          complete confidence. Contact us to discuss your upcoming project and
+          learn more about our zero-downtime methodology.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/commercial-electrical-panel-upgrades-las-vegas#contact-form-commercial"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Schedule a Planning Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    /* Accent utilities (scoped) */
+    .bg-accent {
+      background-color: #f1b725;
+    } /* amber-400 */
+    .text-accent {
+      color: #f1b725;
+    }
+    .border-accent {
+      border-color: #f1b725;
+    }
+    .hover\:bg-accent-dark:hover {
+      background-color: #f59e0b;
+    } /* amber-500 */
+    .ring-accent {
+      --tw-ring-color: #f1b725;
+    }
+
+    /* Methodology template */
+    .page-header-methodology {
+      background-color: #1f2937; /* gray-800 fallback */
+      background-size: cover;
+      background-position: center;
+    }
+    .phase-card {
+      background-color: #f9fafb;
+    } /* gray-50 */
+    .phase-number {
+      background-color: #4b5563; /* gray-600 */
+      color: #f1b725;
+    }
+  </style>
+</Layout>

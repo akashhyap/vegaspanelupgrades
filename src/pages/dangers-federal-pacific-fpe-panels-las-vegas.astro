@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import fpeImage from '../assets/images/fpe.jpg';
+import stabLokImage from '../assets/images/stab-lok.jpg';
+---
+
+<Layout>
+  <div class="fpe-page">
+    <!-- Hero Section - Special red background for warning content -->
+    <section class="bg-red-800 text-white py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl">
+          <p class="text-yellow-300 font-bold">URGENT SAFETY WARNING</p>
+          <h1 class="text-4xl md:text-5xl font-extrabold mt-2">The Hidden Fire Hazard in Your Walls: Federal Pacific (FPE) Panels</h1>
+          <p class="mt-4 text-lg text-gray-200">If your Las Vegas home was built between 1950 and 1990, you may have a dangerous Federal Pacific Electric panel. Here's what you need to know.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+          
+          <!-- Article Content (Left Column) -->
+          <article class="lg:col-span-2 space-y-12">
+            <div class="prose prose-lg max-w-none text-gray-700">
+              <p>Many homeowners are unaware that their electrical panel, the very device meant to protect them from electrical hazards, could be a fire risk itself. <strong>Federal Pacific Electric (FPE) Stab-Lok panels</strong> were widely installed in millions of homes, including many in Las Vegas, but are now known to have a critical design flaw that makes them unsafe.</p>
+              <p>Expert investigations have found that these panels and their circuit breakers can fail to trip during an overload or short circuit. When a breaker fails to trip, the wiring can overheat, creating a serious fire hazard. This is not a minor issue; it's a documented safety failure that necessitates immediate action.</p>
+            </div>
+            
+            <!-- Dangers Section -->
+            <div class="my-12">
+              <h2 class="text-3xl font-bold text-gray-900 mb-6">The Core Dangers of FPE Stab-Lok Panels</h2>
+              <div class="space-y-6">
+                <!-- Danger 1 -->
+                <div class="flex items-start mb-8">
+                  <div class="flex-shrink-0 text-red-600 mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.21 3.03-1.742 3.03H4.42c-1.532 0-2.492-1.696-1.742-3.03l5.58-9.92zM10 13a1 1 0 110-2 1 1 0 010 2zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Breakers Fail to Trip</h3>
+                    <p class="text-gray-700 mt-1">The primary defect is that FPE Stab-Lok breakers often fail to trip during an overcurrent event. This allows electricity to surge through wires, causing them to overheat and potentially ignite surrounding wood and insulation.</p>
+                  </div>
+                </div>
+                <!-- Danger 2 -->
+                <div class="flex items-start mb-8">
+                  <div class="flex-shrink-0 text-red-600 mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.21 3.03-1.742 3.03H4.42c-1.532 0-2.492-1.696-1.742-3.03l5.58-9.92zM10 13a1 1 0 110-2 1 1 0 010 2zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">Insurance & Liability Issues</h3>
+                    <p class="text-gray-700 mt-1">Due to the known risks, many insurance companies will not insure a home with an FPE panel, or they may deny a claim related to an electrical fire if one is present. This puts the homeowner in a position of significant financial liability.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Identification Section -->
+            <div class="my-12 bg-white p-8 rounded-lg shadow-lg">
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">How to Identify a Federal Pacific Panel</h2>
+              <p class="text-gray-700 mb-6">You may be able to identify an FPE panel yourself, but <strong>do not open the panel cover</strong>. Look at the exterior door of your main breaker box.</p>
+              <div class="grid md:grid-cols-2 gap-6 text-center">
+                <div>
+                  <Image 
+                    src={fpeImage} 
+                    alt="Federal Pacific Electric logo on a panel" 
+                    class="rounded-md w-full mb-2" 
+                    width={400} 
+                    height={300}
+                    format="webp"
+                    quality={80}
+                  />
+                  <p class="font-semibold">Look for the "FPE" or "Federal Pacific Electric" brand name on the panel's label.</p>
+                </div>
+                <div>
+                  <Image 
+                    src={stabLokImage} 
+                    alt="Stab-Lok breakers with red tips" 
+                    class="rounded-md w-full mb-2" 
+                    width={400} 
+                    height={300}
+                    format="webp"
+                    quality={80}
+                  />
+                  <p class="font-semibold">The breakers often have a distinctive red tip and the name "Stab-Lok" printed on them.</p>
+                </div>
+              </div>
+              <p class="text-gray-700 mt-6">If you see any of these signs, or if you're unsure, the safest step is to schedule a professional inspection.</p>
+            </div>
+            
+            <!-- Solution Section -->
+            <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+              <h2 class="text-3xl font-bold text-gray-900">The Only Safe Solution is Replacement</h2>
+              <p>There is no approved repair for these panels. The only safe and recommended course of action is a complete <a href="/" class="text-accent font-semibold hover:underline">electrical panel replacement</a>. This involves removing the old, hazardous FPE box and installing a new, modern panel that meets today's stringent safety codes.</p>
+              <p>This not only eliminates the fire hazard but also provides your home with a safer, more reliable electrical system. To understand the investment involved, you can review our guide on the <a href="/cost-of-panel-upgrade-las-vegas" class="text-accent font-semibold hover:underline">cost of a panel upgrade in Las Vegas</a>.</p>
+            </div>
+          </article>
+          
+          <!-- Sidebar (Right Column) -->
+          <aside class="lg:col-span-1 mt-12 lg:mt-0">
+            <div class="sticky top-24 space-y-8" id="stickyQuote">
+              <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-red-600">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Have an FPE Panel?</h3>
+                <p class="text-gray-600 mb-6">This is a serious safety issue. Contact us immediately for a free, no-obligation safety inspection and a quote for replacement.</p>
+                <a href="/company/company/contact-us/" class="w-full text-center bg-red-600 text-white font-bold py-3 px-5 rounded-full hover:bg-red-700 transition-colors duration-300 inline-block text-lg">Request Urgent Inspection</a>
+              </div>
+              <div class="bg-gray-800 text-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Our Replacement Services</h3>
+                <ul class="space-y-3 text-gray-300">
+                  <li><a href="/#services" class="hover:text-accent transition-colors">✓ Full FPE Panel Removal</a></li>
+                  <li><a href="/#services" class="hover:text-accent transition-colors">✓ Modern 200 Amp Panel Installation</a></li>
+                  <li><a href="/#services" class="hover:text-accent transition-colors">✓ Code-Compliant Grounding</a></li>
+                  <li><a href="/#process" class="hover:text-accent transition-colors">✓ Full Permitting & Inspection</a></li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  @media (max-width: 1023px) {
+    #stickyQuote {
+      position: relative !important;
+      top: 0 !important;
+    }
+  }
+</style>
+
+<script>
+  // Handle sticky positioning to work with the sticky header
+  document.addEventListener("DOMContentLoaded", function () {
+    const header = document.getElementById("site-header");
+    const stickyQuote = document.getElementById("stickyQuote");
+    
+    if (header && stickyQuote) {
+      function adjustStickyTop() {
+        // When header is fixed, add its height as top margin for the sticky container
+        const headerIsFixed = window.getComputedStyle(header).position === "fixed";
+        if (headerIsFixed) {
+          stickyQuote.style.top = `${header.offsetHeight + 24}px`; // Add some extra padding
+        } else {
+          stickyQuote.style.top = "24px";
+        }
+      }
+      
+      // Run on scroll and on load
+      window.addEventListener("scroll", adjustStickyTop);
+      adjustStickyTop();
+    }
+  });
+</script>

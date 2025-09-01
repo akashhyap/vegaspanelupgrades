@@ -1,0 +1,167 @@
+---
+// src/pages/about.astro
+import { getImage } from "astro:assets";
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import panelImage from "../../assets/images/panel.jpg";
+
+// Optimize hero asset (currently not used, but can be enabled later)
+// const optimizedHero = await getImage({
+//   src: teamHero,
+//   width: 1920,
+//   format: "webp",
+//   quality: 70,
+// });
+// const heroBgUrl = `url(${optimizedHero.src})`;
+
+const pageTitle =
+  "About Vegas Panel Upgrades | Your Local Las Vegas Electricians";
+const pageDescription =
+  "Meet the team at Vegas Panel Upgrades. Learn about our commitment to safety, quality, and serving the Las Vegas community with licensed, professional electrical services.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main>
+    <!-- Page Header -->
+    <section
+      class="page-header-about bg-gray-800 text-white">
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+          About Vegas Panel Upgrades
+        </h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
+          Your Neighbors, Your Licensed Electricians. Committed to Powering Las
+          Vegas Safely.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <!-- Our Story Section -->
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <Image
+                src={panelImage}
+                alt="Founder of Vegas Panel Upgrades"
+                class="rounded-lg shadow-2xl w-full h-auto object-cover"
+                width={600}
+                height={700}
+                format="webp"
+                quality={80}
+              />
+            </div>
+            <div class="prose prose-lg max-w-none">
+              <h2 class="text-3xl font-bold text-gray-900">Who We Are</h2>
+              <p>
+                Vegas Panel Upgrades was founded on a simple principle: provide
+                our Las Vegas neighbors with honest, high-quality electrical
+                work they can trust. We're not a franchise or a referral
+                service; we are a local, family-owned business. Our founder, a
+                licensed master electrician with over 15 years of experience,
+                saw a need for a company that specializes in one of the most
+                critical parts of home safety—the electrical panel.
+              </p>
+              <p>
+                We live here, we work here, and we're dedicated to ensuring
+                every home we service is safe, compliant, and ready for the
+                future.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mission Statement -->
+          <div class="my-16 mission-statement-box p-10 rounded-lg text-center">
+            <h3 class="text-3xl font-bold text-gray-900">Our Mission</h3>
+            <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+              To be the most trusted and respected electrical contractor in Las
+              Vegas for panel upgrades by delivering uncompromising safety,
+              superior craftsmanship, and transparent communication on every
+              project.
+            </p>
+          </div>
+
+          <!-- Our Commitments -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">
+              Our Commitment to You
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+              <!-- Commitment 1 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg commitment-card border-l-4">
+                <h4 class="text-xl font-bold">Uncompromising Safety</h4>
+                <p class="text-gray-600 mt-2">
+                  Your family's safety is our number one priority. All work is
+                  performed by licensed electricians and is fully permitted and
+                  inspected to meet the highest safety codes.
+                </p>
+              </div>
+              <!-- Commitment 2 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg commitment-card border-l-4">
+                <h4 class="text-xl font-bold">Expert Craftsmanship</h4>
+                <p class="text-gray-600 mt-2">
+                  We take pride in our clean, organized, and professional work.
+                  We use only high-quality materials from trusted brands to
+                  ensure your new panel is reliable for decades to come.
+                </p>
+              </div>
+              <!-- Commitment 3 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg commitment-card border-l-4">
+                <h4 class="text-xl font-bold">Honest Communication</h4>
+                <p class="text-gray-600 mt-2">
+                  We explain the entire
+                  <a
+                    href="/electrical-panel-upgrade-process-las-vegas"
+                    class="text-accent font-semibold hover:underline"
+                    >process</a
+                  >
+                  clearly and provide upfront pricing. The price we quote is the
+                  price you pay, with no surprises.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final CTA -->
+          <div class="mt-16 text-center bg-gray-800 text-white p-10 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-extrabold">
+              Ready to Work With a Team That Cares?
+            </h2>
+            <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+              Experience the difference of working with a dedicated, local
+              electrical contractor. Contact us today for your free estimate.
+            </p>
+            <div class="mt-8">
+              <a
+                href="/company/company/contact-us/"
+                class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+                >Schedule Your Free Estimate</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+    /* Accent utilities (scoped) */
+    .bg-accent { background-color: #f1b725; } /* amber-400 */
+    .text-accent { color: #f1b725; }
+    .border-accent { border-color: #f1b725; }
+    .hover\:bg-accent-dark:hover { background-color: #F59E0B; } /* amber-500 */
+    .ring-accent { --tw-ring-color: #f1b725; } /* Tailwind ring color var */
+
+    /* About template */
+    .page-header-about {
+      background-size: cover;
+      background-position: center;
+    }
+    .mission-statement-box { background-color: #F9FAFB; } /* gray-50 */
+    .commitment-card { border-left-color: #f1b725; }
+  </style>

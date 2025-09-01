@@ -1,0 +1,256 @@
+---
+// src/pages/dedicated-circuit-installation.astro
+import Layout from "../../layouts/Layout.astro";
+
+const pageTitle = "Dedicated Circuit Installation | Las Vegas, NV";
+const pageDescription =
+  "Licensed electricians for dedicated circuit installation in Las Vegas. We install new outlets and circuits for hot tubs, EV chargers, appliances, and more.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Page Header -->
+    <section class="page-header-dedicated-circuit text-white">
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24 text-center"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+          Dedicated Circuit Installation
+        </h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-blue-100">
+          Safely power your high-demand appliances and equipment with a new,
+          professionally installed dedicated circuit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 xl:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">
+              Why Do I Need a Dedicated Circuit?
+            </h2>
+            <p>
+              A dedicated circuit is an electrical circuit that serves a single,
+              specific appliance. It has its own circuit breaker in your main
+              panel and is not shared with any other outlets or devices. This is
+              required by the National Electrical Code for any major appliance
+              that draws a significant amount of power to prevent overloads and
+              ensure safe operation.
+            </p>
+          </div>
+
+          <!-- Common Appliances Section -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">
+              Common Appliances Requiring a Dedicated Circuit
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Card 1 -->
+              <div class="appliance-card p-6 rounded-lg shadow-sm border-t-4">
+                <div class="appliance-icon mb-4">
+                  <svg
+                    class="w-12 h-12"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">EV Chargers</h3>
+                <p class="text-gray-600 mt-2">
+                  A Level 2 EV charger requires a 240-volt dedicated circuit to
+                  charge your vehicle efficiently and safely.
+                </p>
+              </div>
+              <!-- Card 2 -->
+              <div class="appliance-card p-6 rounded-lg shadow-sm border-t-4">
+                <div class="appliance-icon mb-4">
+                  <svg
+                    class="w-12 h-12"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9.879 16.121A3 3 0 1012.014 14 3 3 0 009.879 16.121z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">Hot Tubs &amp; Spas</h3>
+                <p class="text-gray-600 mt-2">
+                  The powerful heaters and pumps in a hot tub require a
+                  high-amperage, GFCI-protected dedicated circuit.
+                </p>
+              </div>
+              <!-- Card 3 -->
+              <div class="appliance-card p-6 rounded-lg shadow-sm border-t-4">
+                <div class="appliance-icon mb-4">
+                  <svg
+                    class="w-12 h-12"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.293 2.293a1 1 0 010 1.414L11 15H9v-2l6.293-6.293a1 1 0 011.414 0L19 9z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">Refrigerators &amp; Freezers</h3>
+                <p class="text-gray-600 mt-2">
+                  A dedicated circuit prevents your fridge or garage freezer
+                  from tripping a breaker shared with other appliances, saving
+                  your food from spoiling.
+                </p>
+              </div>
+              <!-- Card 4 -->
+              <div class="appliance-card p-6 rounded-lg shadow-sm border-t-4">
+                <div class="appliance-icon mb-4">
+                  <svg
+                    class="w-12 h-12"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.085a2 2 0 00-1.736.97l-2.714 4.224a2 2 0 00.342 2.776l3.5 2.5a2 2 0 002.776-.342z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">Treadmills &amp; Home Gyms</h3>
+                <p class="text-gray-600 mt-2">
+                  The powerful motors in modern treadmills can cause lights to
+                  flicker and breakers to trip on shared circuits.
+                </p>
+              </div>
+              <!-- Card 5 -->
+              <div class="appliance-card p-6 rounded-lg shadow-sm border-t-4">
+                <div class="appliance-icon mb-4">
+                  <svg
+                    class="w-12 h-12"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 11c0 3.517-1.009 6.789-2.756 9.312M12 11c0-3.517 1.009-6.789 2.756-9.312M12 11H3M21 11h-9"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">
+                  Microwaves &amp; Toaster Ovens
+                </h3>
+                <p class="text-gray-600 mt-2">
+                  Modern building code requires most built-in microwaves and
+                  other powerful countertop appliances to have their own
+                  circuit.
+                </p>
+              </div>
+              <!-- Card 6 -->
+              <div class="appliance-card p-6 rounded-lg shadow-sm border-t-4">
+                <div class="appliance-icon mb-4">
+                  <svg
+                    class="w-12 h-12"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold">Workshop &amp; Garage Tools</h3>
+                <p class="text-gray-600 mt-2">
+                  Air compressors, table saws, and welders all require dedicated
+                  circuits to handle their high power draw on startup.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final CTA -->
+      <div
+        id="contact-form-dedicated-circuit"
+        class="py-16 xl:py-24 text-center bg-gray-800 text-white p-10 rounded-lg shadow-xl"
+      >
+        <h2 class="text-3xl font-extrabold">
+          Need a New Circuit? We Can Help.
+        </h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          Whether your panel is full or you just need a new line run, our
+          licensed electricians can provide a safe and code-compliant solution.
+          Contact us for a free estimate.
+        </p>
+        <div class="mt-8">
+          <a
+            href="/company/company/contact-us/"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+            >Request a Free Estimate</a
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Accent utilities (scoped) */
+  .bg-accent {
+    background-color: #f1b725;
+  } /* amber-400 */
+  .text-accent {
+    color: #f1b725;
+  }
+  .border-accent {
+    border-color: #f1b725;
+  }
+  .hover\:bg-accent-dark:hover {
+    background-color: #f59e0b;
+  } /* amber-500 */
+  .ring-accent {
+    --tw-ring-color: #f1b725;
+  }
+
+  /* Dedicated Circuit template */
+  .page-header-dedicated-circuit {
+    background-color: #3b82f6;
+  } /* blue-600 */
+  .appliance-card {
+    background-color: #f9fafb;
+    border-color: #e5e7eb;
+  } /* gray-50 / gray-200 */
+  .appliance-icon {
+    color: #3b82f6;
+  } /* blue-600 */
+</style>

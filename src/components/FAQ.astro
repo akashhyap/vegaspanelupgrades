@@ -1,0 +1,95 @@
+---
+// FAQ component with accordion functionality
+---
+
+<section class="py-16 lg:py-24 px-4 sm:px-6 xl:px-16">
+  <div class="container mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <span class="text-accent font-bold text-base font-manrope">Frequently Asked Questions</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">
+        Common Questions About Panel Upgrades
+      </h2>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        Get answers to the most common questions about electrical panel upgrades in Las Vegas.
+      </p>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <div class="max-w-3xl mx-auto divide-y divide-gray-200">
+      <!-- FAQ Item 1 -->
+      <div class="py-6">
+        <details class="group">
+          <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+            <span class="text-xl font-semibold">How much does a panel upgrade cost in Las Vegas?</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="text-gray-600 mt-3 group-open:animate-fadeIn">
+            The cost typically ranges from $2,500 to $4,500, depending on the size of the upgrade (e.g., to 200 amps), the condition of your wiring, and any required exterior work. We provide a firm, detailed quote after our initial free consultation.
+          </p>
+        </details>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="py-6">
+        <details class="group">
+          <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+            <span class="text-xl font-semibold">How long will my power be out?</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="text-gray-600 mt-3 group-open:animate-fadeIn">
+            For a standard panel replacement, the power is typically off for 4 to 8 hours on the day of installation. We coordinate with you to schedule a day that minimizes disruption to your routine.
+          </p>
+        </details>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="py-6">
+        <details class="group">
+          <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+            <span class="text-xl font-semibold">Do you handle the permits?</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="text-gray-600 mt-3 group-open:animate-fadeIn">
+            Absolutely. We manage the entire permitting process from application to final inspection with Clark County or the City of Las Vegas, ensuring your project is fully compliant and documented correctly.
+          </p>
+        </details>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="py-6">
+        <details class="group">
+          <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+            <span class="text-xl font-semibold">Is my old Federal Pacific or Zinsco panel really that bad?</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <p class="text-gray-600 mt-3 group-open:animate-fadeIn">
+            Yes. These panels have a known history of breaker failure, meaning they may not trip during an overload, creating a significant fire hazard. Most insurance companies will not cover a home with one of these panels installed.
+          </p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

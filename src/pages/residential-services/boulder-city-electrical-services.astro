@@ -1,0 +1,212 @@
+---
+// src/pages/boulder-city-electrical-services.astro
+import Layout from "../../layouts/Layout.astro";
+import { getImage, Image } from "astro:assets";
+
+// Import your local hero image
+import boulderCityHero from "../../assets/images/boulder-city.jpg";
+import licensedInsuredImage from "../../assets/images/licensed-insured.jpg";
+import permitImage from "../../assets/images/permit.jpg";
+import homeCleanImage from "../../assets/images/home-clean.jpg";
+
+// Generate an optimized asset (tweak as you like)
+const optimizedHero = await getImage({
+  src: boulderCityHero,
+  width: 1920,
+  format: "webp",
+  quality: 70,
+});
+const heroBgUrl = `url(${optimizedHero.src})`;
+
+const pageTitle = "Boulder City Electrical Services | Panel Upgrades & Repairs";
+const pageDescription =
+  "Dedicated electrical services for Boulder City, NV. We specialize in panel upgrades for historic and modern homes, ensuring safety and code compliance.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-white text-gray-800">
+    <!-- Location Hero Section -->
+    <section
+      class="location-hero-bg-bc text-white"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), ${heroBgUrl}`,
+      }}
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            Dedicated Electrical Services for Boulder City
+          </h1>
+          <p class="text-lg md:text-xl mb-8 text-gray-200">
+            Preserving the safety and integrity of Boulder City's unique homes with expert panel upgrades and electrical services.
+          </p>
+          <a
+            href="#contact-form-bc"
+            class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+          >
+            Get Your Boulder City Estimate
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Expert Care for Boulder City's Historic and Modern Homes
+            </h2>
+            <p>
+              Boulder City has a rich history and a unique charm, with a mix of historic homes and modern residences. The electrical needs of these homes are just as diverse. Older homes, especially in the historic district, often have outdated and unsafe electrical panels that require special care to upgrade. We are experienced in working with all types of homes in Boulder City, providing safe, code-compliant electrical solutions that respect your property.
+            </p>
+          </div>
+
+          <!-- Services Section -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bc-service-highlight p-6 rounded-lg">
+              <h3 class="text-xl font-bold text-gray-800">Upgrades for Historic Homes</h3>
+              <p class="text-gray-600 mt-2">
+                We specialize in carefully replacing old, hazardous panels in historic homes, ensuring the new system is safe and meets all modern codes while respecting the home's structure.
+              </p>
+            </div>
+            <div class="bc-service-highlight p-6 rounded-lg">
+              <h3 class="text-xl font-bold text-gray-800">Capacity for Modern Needs</h3>
+              <p class="text-gray-600 mt-2">
+                Even newer homes in Boulder City can benefit from a panel upgrade to safely power RV hookups, workshops, and other high-demand electrical loads.
+              </p>
+            </div>
+          </div>
+
+          <!-- Why Choose Us in Boulder City -->
+          <div class="my-16">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">
+              Your Boulder City Electrical Partner
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+              <div>
+                <Image
+                  src={licensedInsuredImage}
+                  alt="A licensed electrician"
+                  class="rounded-lg shadow-md mx-auto mb-4"
+                  width={300}
+                  height={200}
+                  format="webp"
+                  quality={80}
+                />
+                <h4 class="text-xl font-bold">Licensed &amp; Insured</h4>
+                <p class="text-gray-600 mt-2">
+                  We are fully licensed to perform all electrical work in Boulder City, ensuring your project is done right.
+                </p>
+              </div>
+              <div>
+                <Image
+                  src={permitImage}
+                  alt="A city permit document"
+                  class="rounded-lg shadow-md mx-auto mb-4"
+                  width={300}
+                  height={200}
+                  format="webp"
+                  quality={80}
+                />
+                <h4 class="text-xl font-bold">We Handle Permits</h4>
+                <p class="text-gray-600 mt-2">
+                  We manage the entire permitting and inspection process with the Boulder City building department.
+                </p>
+              </div>
+              <div>
+                <Image
+                  src={homeCleanImage}
+                  alt="A clean work area"
+                  class="rounded-lg shadow-md mx-auto mb-4"
+                  width={300}
+                  height={200}
+                  format="webp"
+                  quality={80}
+                />
+                <h4 class="text-xl font-bold">Respect for Your Home</h4>
+                <p class="text-gray-600 mt-2">
+                  We pride ourselves on clean, professional, and respectful service for every Boulder City resident.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Final CTA Form -->
+       <div id="contact-form-bc" class="bc-cta-section text-white py-16 xl:py-24 rounded-lg shadow-xl">
+        <h2 class="text-3xl font-extrabold text-center">
+          Get a Free Quote for Your Boulder City Home
+        </h2>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto text-center">
+          Fill out the form below or call us to schedule your free, no-obligation estimate with a licensed electrician.
+        </p>
+        <form class="mt-8 max-w-xl mx-auto">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="name-bc" class="sr-only">Name</label>
+              <input
+                type="text"
+                id="name-bc"
+                placeholder="Your Name"
+                class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+              />
+            </div>
+            <div>
+              <label for="phone-bc" class="sr-only">Phone</label>
+              <input
+                type="tel"
+                id="phone-bc"
+                placeholder="Phone Number"
+                class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+              />
+            </div>
+          </div>
+          <div class="mt-6">
+            <label for="address-bc" class="sr-only">Address</label>
+            <input
+              type="text"
+              id="address-bc"
+              placeholder="Address in Boulder City"
+              class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+            />
+          </div>
+          <div class="mt-6">
+            <label for="message-bc" class="sr-only">Message</label>
+            <textarea
+              id="message-bc"
+              placeholder="Tell us about your project..."
+              rows="4"
+              class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-accent focus:outline-none"
+            ></textarea>
+          </div>
+          <div class="mt-8 text-center">
+            <button
+              type="submit"
+              class="bg-accent text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-accent-dark transition-transform duration-300 inline-block transform hover:scale-105"
+            >
+              Request My Free Estimate
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</Layout>
+<style>
+    /* Accent utilities (scoped) */
+    .bg-accent { background-color: #f1b725; } /* amber-400 */
+    .text-accent { color: #f1b725; }
+    .border-accent { border-color: #f1b725; }
+    .hover\:bg-accent-dark:hover { background-color: #F59E0B; } /* amber-500 */
+    .ring-accent { --tw-ring-color: #f1b725; } /* Tailwind ring color var */
+
+    /* Boulder City template */
+    .location-hero-bg-bc {
+      background-size: cover;
+      background-position: center;
+    }
+    .bc-service-highlight { background-color: #FEFCE8; } /* yellow-50 */
+    .bc-cta-section { background-color: #111827; } /* gray-900 */
+  </style>
